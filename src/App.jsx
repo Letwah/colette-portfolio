@@ -3,12 +3,13 @@ import React from "react";
 import "./app.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Body from "./components/Body";
 
 const App = () => {
   return (
     <>
       <Header />
-      <h1>TEST </h1>
+      <Body />
       <Footer />
     </>
   );
