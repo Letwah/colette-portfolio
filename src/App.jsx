@@ -1,13 +1,15 @@
 import React from "react";
 
-// import { GlobalStyle } from "./appStyles";
+import "./app.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
-      {/* <GlobalStyle /> */}
-
+      <Header />
       <h1>TEST </h1>
+      <Footer />
     </>
   );
 };
