@@ -23,7 +23,7 @@ const Header = () => {
           </li>
           <li>
             <a href="#work" className="nav-link">
-              work
+              Portfolio
             </a>
           </li>
           <li>
