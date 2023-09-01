@@ -12,7 +12,7 @@ const Hero = () => {
           </p>
         </div>
         <img
-          src="../../assets/images/colette-new-pic.png"
+          src="../../assets/images/Colette_cutout.png"
           alt="colette-smith"
           loading="lazy"
           className="profile-img"
