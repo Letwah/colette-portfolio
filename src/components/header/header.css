@@ -2,20 +2,31 @@ ul {
   list-style-type: none;
 }
 
-h1.logo {
+ul.navigation {
+  padding-left: 0;
+}
+
+.logo h1 {
   text-transform: uppercase;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.1rem;
 }
 
 nav {
   position: sticky;
   top: 0;
   left: 0;
+  width: 100vw;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: #fffff8;
+  background-color: #fffff895;
+  flex-direction: row;
+  backdrop-filter: blur(2px);
 }
 
 nav a {
@@ -35,7 +46,7 @@ nav ul {
 }
 
 nav ul li {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .burger-menu {
@@ -45,8 +56,4 @@ nav ul li {
   background-color: transparent;
   cursor: pointer;
   display: none;
-}
-
-body {
-  font-family: "Work Sans", sans-serif;
 }

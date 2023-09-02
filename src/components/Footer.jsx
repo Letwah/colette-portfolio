@@ -5,13 +5,18 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <p>&copy; Copyright 2023</p>
-        <p>
-          Built by
-          <a href="https://linkedIn/colette-smith" target="_blank">
-            Colette Smith
-          </a>
-        </p>
+        <div>
+          <p>&copy; Copyright 2023</p>
+        </div>
+
+        <div>
+          <p>
+            Built by
+            <a href="https://linkedIn/colette-smith" target="_blank">
+              &nbsp;Colette Smith
+            </a>
+          </p>
+        </div>
       </footer>
     </>
   );

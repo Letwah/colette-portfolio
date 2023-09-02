@@ -1,7 +1,8 @@
 import React from "react";
 import "./body/body.css";
-import Hero from "./Hero";
-import Portfolio from "./portfolio/Portfolio";
+import Portfolio from "./Portfolio";
+// import Hero from "./Hero";
+// import Slider from "./slider/Slider";
 
 const Body = () => {
   return (

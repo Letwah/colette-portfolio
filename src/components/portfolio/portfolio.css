@@ -1,67 +1,82 @@
-body {
-  width: 100vw;
+/* img.project{
+    
+} */
+
+/* coming--soon 
+project--link 
+image--zoom  */
+
+.portfolio > .left-layout,
+.portfolio > .right-layout {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.project-link {
+  position: relative; /* to allow for positioning of child elements */
   height: 100vh;
-  background: #151515;
+  overflow: hidden; /*to clip image zoom */
+}
+
+.project-link:hover .project-image {
+  transform: scale(1.2); /* Counteract the scaling on hover */
+  transform-origin: center center;
+}
+
+.project-image-big {
+  overflow: clip;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+}
+
+.project-image-small {
+  overflow: clip;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+}
+
+.project-image-container {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.portfolioContainer {
-  width: 100vw;
-  height: 100vh;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+/* .project-link.small {
+  background-size: contain;
+} */
+
+/* big image on left layout  */
+.big-left {
+  grid-row: 1;
+  grid-column: 1 / span 4;
 }
 
-.next,
-.prev {
-  top: calc(50% - 20px);
-  position: absolute;
-  background: white;
-  border-radius: 30px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 18px;
-  z-index: 2;
+.small-left {
+  grid-row: 1;
+  grid-column: 5 / span 2;
 }
 
-.next {
-  right: 10px;
+.small-2-left {
+  grid-row: 1;
+  grid-column: 7 / span 2;
+}
+/* big image on right layout  */
+.small-right {
+  grid-row: 2;
+  grid-column: 3 / span 2;
+}
+.small-2-right {
+  grid-row: 2;
+  grid-column: 1 / span 2;
 }
 
-.prev {
-  left: 10px;
-  transform: scale(-1);
-}
-
-img {
-  position: absolute;
-  max-width: 100vw;
-}
-
-.refresh {
-  padding: 10px;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-  width: 20px;
-  height: 20px;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+.big-right {
+  grid-row: 2;
+  grid-column: 5 / span 4;
 }
