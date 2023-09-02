@@ -9,7 +9,10 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Home from "./components/Home";
+
 import { selectPage, setPage } from "./features/appSlice";
+import Projects from "./components/Projects";
+
 const App = () => {
   const dispatch = useDispatch();
   const page = useSelector(selectPage);
@@ -28,8 +31,9 @@ const App = () => {
       <Header />
       <div className="App">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="services" element={<Portfolio />} />
+          <Route path="home" element={<Home />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
         </Routes>
