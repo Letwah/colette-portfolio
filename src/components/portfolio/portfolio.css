@@ -21,8 +21,8 @@ image--zoom  */
 }
 
 .project-link:hover .project-image {
-  transform: scale(1.2); /* Counteract the scaling on hover */
-  transform-origin: center center;
+  transform: scale(); /* Counteract the scaling on hover */
+  /* transform-origin: center center; */
 }
 
 .project-image-big {

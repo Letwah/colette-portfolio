@@ -1,7 +1,7 @@
 import React from "react";
-import "./hero/hero.css";
-
-const Hero = () => {
+import "./home/home.css";
+import { Link } from "react-router-dom";
+const Home = () => {
   return (
     <>
       <section className="hero" id="about">
@@ -17,9 +17,10 @@ const Hero = () => {
           loading="lazy"
           className="profile-img"
         ></img>
+        <Link to="contact">You can contact us by submitting form</Link>
       </section>
     </>
   );
 };
 
-export default Hero;
+export default Home;

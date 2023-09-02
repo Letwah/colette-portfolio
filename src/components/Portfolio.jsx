@@ -5,8 +5,8 @@ import "./portfolio/portfolio.css";
 const Portfolio = () => {
   const hoverVariants = {
     hover: {
-      scale: 1.2,
-    },
+      scale: 1.03,
+    }, ///add video oh hover here
   };
 
   return (
