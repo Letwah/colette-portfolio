@@ -86,3 +86,15 @@ nav ul li {
   font-size: 2rem;
   color: #0e0e0e;
 }
+
+/* Default styles for larger screens */
+.burger-menu-container {
+  display: none; /* Hide on larger screens */
+}
+
+/* Media query for mobile view (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  .burger-menu-container {
+    display: block; /* Show on smaller screens */
+  }
+}
