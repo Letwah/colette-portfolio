@@ -1,14 +1,14 @@
 import React from "react";
 import "./home/home.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <section className="hero" id="about">
-        <div className="about animate__animated animate__shakeX">
+      <section className="hero" id="hero">
+        <div className="about animate-text">
           <h2 className="about-title">About Me</h2>
           <p className="about-text">
-            Colette Smith is a Frontend Engineer and visual designer.
+            Hi, I'm a Frontend Engineer and visual designer.
           </p>
         </div>
         <img
@@ -17,7 +17,6 @@ const Home = () => {
           loading="lazy"
           className="profile-img"
         ></img>
-        <Link to="contact">You can contact us by submitting form</Link>
       </section>
     </>
   );

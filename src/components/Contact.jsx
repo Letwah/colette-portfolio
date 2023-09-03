@@ -1,11 +1,15 @@
 import React from "react";
 import "./contact/contact.css";
-import { Link } from "react-router-dom";
+
+import ContactForm from "./contact/ContactForm";
+// import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
-      <section className="contact" id="about">
-        <Link to="contact">You can contact us by submitting form</Link>
+      <section className="contact" id="contact">
+        <div className="contactForm">
+          <ContactForm />
+        </div>
       </section>
     </>
   );
