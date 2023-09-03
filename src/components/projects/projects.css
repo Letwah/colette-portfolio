@@ -19,7 +19,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #0b0b0b55;
+  /* background-color: #ffffdfcf; */
+  background-color: #0000001a;
   border-radius: 4px;
   opacity: 1;
   width: 80%;
