@@ -1,0 +1,35 @@
+body > * {
+  cursor: none;
+}
+
+.roundCursor {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+
+  background: #ff00008e;
+  transition-timing-function: ease-out;
+
+  transition: width 0.8s, height 0.8s, background-color 0.8s;
+  position: absolute;
+  z-index: 9999999999;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+}
+
+.roundCursor.active {
+  height: 50px;
+  width: 50px;
+  background-color: #ff0000;
+  opacity: 0.4;
+  visibility: visible;
+  filter: invert();
+}
+
+@media (hover: none) {
+  .roundCursor {
+    display: none;
+  }
+}

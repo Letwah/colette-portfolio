@@ -12,6 +12,7 @@ import Home from "./components/Home";
 
 import { selectPage, setPage } from "./features/appSlice";
 import Projects from "./components/Projects";
+import CustomCursor from "./components/Cursor";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -30,6 +31,7 @@ const App = () => {
     <>
       <Header />
       <div className="App">
+        <CustomCursor />
         <Routes>
           <Route path="home" element={<Home />} />
           <Route path="portfolio" element={<Portfolio />} />

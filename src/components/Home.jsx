@@ -6,9 +6,14 @@ const Home = () => {
     <>
       <section className="hero" id="hero">
         <div className="about animate-text">
-          <h2 className="about-title">About Me</h2>
+          <h2 className="about-title">
+            Hi, I'm a detail-oriented front-end developer with a strong
+            background in design.
+          </h2>
           <p className="about-text">
-            Hi, I'm a Frontend Engineer and visual designer.
+            My expertise lies in merging creative vision with robust technical
+            skills to produce visually striking and immersive digital
+            experiences.
           </p>
         </div>
         <img
