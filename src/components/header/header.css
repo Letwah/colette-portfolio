@@ -93,6 +93,9 @@ nav a.title:focus::after {
   background: none;
   border: none;
   cursor: pointer;
+  position: fixed;
+  right: 2rem;
+  z-index: 999;
 }
 
 .burger-menu .line {
@@ -134,9 +137,9 @@ nav a.title:focus::after {
 /* Add styles for mobile navigation menu */
 .burger-menu-content {
   position: absolute;
-  width: 50vw;
+  width: 100vw;
   height: fit-content;
-  top: 80px;
+  top: 0px;
   right: 0;
   background-color: #fffff8d3;
   z-index: 2;
@@ -157,6 +160,10 @@ nav a.title:focus::after {
   margin: 1rem;
 }
 
+.burger-menu-content > div.topNavItem {
+  margin-top: 50px;
+}
+
 .burger-menu-content a:hover {
   /* color: limegreen; */
   border-bottom: 1px solid #0e0e0e;
@@ -166,5 +173,6 @@ nav a.title:focus::after {
 @media (max-width: 768px) {
   .burger-menu-container {
     display: block;
+    z-index: 99;
   }
 }

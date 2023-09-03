@@ -29,8 +29,8 @@ const App = () => {
 
   return (
     <>
-      <Header />
       <div className="App">
+        <Header />
         <CustomCursor />
         <Routes>
           <Route path="home" element={<Home />} />
@@ -39,9 +39,8 @@ const App = () => {
           <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
         </Routes>
+        <Footer />
       </div>
-      <Body />
-      <Footer />
     </>
   );
 };

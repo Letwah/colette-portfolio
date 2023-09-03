@@ -69,7 +69,7 @@ const Header = () => {
 
         {mobileMenuOpen && (
           <div className="burger-menu-content">
-            <div>
+            <div className="topNavItem">
               <Link to="/about">About</Link>
             </div>
             <div>
@@ -79,7 +79,6 @@ const Header = () => {
               <Link to="/projects">Projects</Link>
             </div>
             <div>
-              {" "}
               <Link to="/contact">Contact</Link>
             </div>
           </div>
