@@ -87,14 +87,14 @@ nav ul li {
 
 .burger-menu .line {
   width: 30px;
-  height: 3px;
+  height: 1px;
   background-color: #0e0e0e;
   margin: 6px 0;
   transition: 0.4s;
 }
 
 .burger-menu.cross .line:nth-child(1) {
-  transform: rotate(-45deg) translate(-7px, 7px);
+  transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 .burger-menu.cross .line:nth-child(2) {
@@ -102,7 +102,7 @@ nav ul li {
 }
 
 .burger-menu.cross .line:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -5px);
 }
 
 .custom-burger-icon {
