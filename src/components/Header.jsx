@@ -37,9 +37,10 @@ const Header = () => {
       {windowWidth > 768 || (!burgerOpen && windowWidth > 768) ? (
         <div>
           <ul className="navigation">
-            <li>
-              <Link to="/home">Colette Smith | Developer and Designer</Link>
-            </li>
+            <Link className="title" to="/home">
+              Colette Smith | Developer and Designer
+            </Link>
+
             <li>
               <Link to="/about">About</Link>
             </li>

@@ -61,13 +61,23 @@ nav ul {
   display: flex;
   /* gap: 1.9rem; */
   justify-content: space-between;
-
+  align-items: center;
   flex-direction: row;
   width: 94vw;
 }
 
 nav ul li {
   font-weight: 500;
+}
+
+nav a.title {
+  font-weight: 700;
+}
+
+nav a.title:hover::after,
+nav a.title:focus::after {
+  transform: translate3d(-100%, 0, 0);
+  opacity: 0;
 }
 
 /* Default styles for larger screens */
