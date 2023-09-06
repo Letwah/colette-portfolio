@@ -1,60 +1,82 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap, Power3 } from "gsap";
 import "./home/home.css";
 import Projects from "./Projects";
 
-// import { Link } from "react-router-dom";
 const Home = () => {
   const homeRef = useRef(null);
   const textLinesRef = useRef([]);
   const imageRef = useRef(null);
+  const paraRef = useRef(null);
+  const [animationPlayed, setAnimationPlayed] = useState(false);
 
   useEffect(() => {
     // Set initial visibility
     gsap.set(homeRef.current, { visibility: "visible" });
+    gsap.set(paraRef.current, { visibility: "visible", opacity: 0 });
 
     // Use the `to` method to animate your elements
     gsap.to(homeRef.current, {
       duration: 1,
       opacity: 1,
       y: 0,
-      ease: "power3.out", // Easing function
+      ease: Power3.ease, // Easing function
     });
 
-    // Animate text lines sequentially
-    gsap.fromTo(
-      textLinesRef.current,
-      {
-        opacity: 0,
-        y: -20,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-        ease: "power3.out",
-        stagger: 0.5, // Time between each line
-        onComplete: () => {
-          // Animation complete callback
+    if (!animationPlayed) {
+      // Animate text lines sequentially
+      gsap.fromTo(
+        textLinesRef.current,
+        {
+          visibility: "visible", // Show text lines before animation
+          opacity: 0,
+          y: -20,
         },
-      }
-    );
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          ease: Power3.ease,
+          stagger: 0.5,
+          onComplete: () => {
+            // Animation complete callback
+          },
+        }
+      );
+
+      gsap.fromTo(
+        paraRef.current,
+        {
+          opacity: 0,
+          y: 20,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          ease: Power3.easeOut,
+          delay: 1.5,
+        }
+      );
+
+      setAnimationPlayed(true);
+    }
 
     gsap.fromTo(
       imageRef.current,
       {
         opacity: 0,
-        y: 100, // Adjust starting Y position
+        y: 100,
       },
       {
         opacity: 1,
         y: 0,
         duration: 1,
         ease: Power3.easeOut,
-        delay: 0.5, // Delay image animation after text
+        delay: 0.5,
       }
     );
-  }, []);
+  }, [animationPlayed]);
 
   return (
     <>
@@ -64,22 +86,29 @@ const Home = () => {
             <div className="hero-content">
               <div className="hero-content-inner">
                 <h2 className="about-title">
-                  <div className="hero-content-line">
-                    <span ref={(el) => textLinesRef.current.push(el)}>
-                      Hi, I'm Colette,
-                    </span>
+                  <div
+                    className="hero-content-line"
+                    ref={(el) => textLinesRef.current.push(el)}
+                  >
+                    Hi, I'm Colette,
                   </div>
-                  <div className="hero-content-line">
-                    <span ref={(el) => textLinesRef.current.push(el)}>
-                      a creative front-end developer
-                    </span>
+                  <div
+                    className="hero-content-line"
+                    ref={(el) => textLinesRef.current.push(el)}
+                  >
+                    a creative front-end developer
                   </div>
-                  <div className="hero-content-line">
-                    <span ref={(el) => textLinesRef.current.push(el)}>
-                      with a strong background in design.
-                    </span>
+                  <div
+                    className="hero-content-line"
+                    ref={(el) => textLinesRef.current.push(el)}
+                  >
+                    with a background in design.
                   </div>
                 </h2>
+                <p ref={paraRef} className="about-text">
+                  merging creative vision with evolving technical skills to
+                  create visually immersive digital experiences.
+                </p>
               </div>
             </div>
             <div className="hero-image">
@@ -94,11 +123,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* <p className="about-text">
-            My expertise lies in merging creative vision with robust technical
-            skills to produce visually striking and immersive digital
-            experiences.
-          </p> */}
         </div>
       </section>
       <Projects />
