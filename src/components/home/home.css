@@ -1,9 +1,11 @@
 .hero {
   height: 100vh;
   visibility: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .hero .container {
-  min-width: 98vw;
+  max-width: 98vw;
   margin: 0 auto;
 }
 .hero .container .hero-inner {
@@ -15,6 +17,8 @@
 }
 .hero .container .hero-inner .hero-content {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 .hero .container .hero-inner .hero-content .hero-content-inner {
   color: #323232;
@@ -50,4 +54,9 @@
   bottom: 0;
   max-width: 300px;
   height: auto;
+}
+@media screen and (min-width: 800px) {
+  .hero {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=home.css.map */
