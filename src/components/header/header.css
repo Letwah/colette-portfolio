@@ -2,6 +2,20 @@ ul {
   list-style-type: none;
   padding-inline-start: 0px;
 }
+/* nav  layout */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fffff895;
+  backdrop-filter: blur(2px);
+}
 
 .logo h1 {
   text-transform: uppercase;
@@ -9,24 +23,21 @@ ul {
   white-space: nowrap;
   margin: 0;
   letter-spacing: 0.1rem;
+  color: #0e0e0e;
+  flex: 1;
 }
 
-nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 1;
+/* navigation 
+  links layout (not logo)*/
+.navigation {
   display: flex;
-  align-items: center;
+  flex-grow: 1;
   justify-content: flex-end;
-  padding: 1rem 2rem;
-  background-color: #fffff895;
-  flex-direction: row;
-  backdrop-filter: blur(2px);
+  width: 94vw;
 }
 
-nav a {
+/* nav decoration */
+.navigation a {
   display: block;
   position: relative;
   padding: 0.2em 0;
@@ -36,7 +47,7 @@ nav a {
   overflow: hidden;
 }
 
-nav a::after {
+.navigation a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -50,32 +61,32 @@ nav a::after {
   transform: translate3d(-100%, 0, 0);
 }
 
-nav a:hover::after,
-nav a:focus::after {
+.navigation a:hover::after,
+.navigation a:focus::after {
   transform: translate3d(0, 0, 0);
   opacity: 1;
   /* border-bottom: 1px solid #0e0e0e; */
 }
 
-nav ul {
+.navigation ul {
   display: flex;
   /* gap: 1.9rem; */
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 94vw;
+  gap: 1.9rem;
 }
 
-nav ul li {
+.navigation ul li {
   font-weight: 500;
 }
 
-nav a.title {
+.navigation a.title {
   font-weight: 700;
 }
 
-nav a.title:hover::after,
-nav a.title:focus::after {
+.navigation a.title:hover::after,
+.navigation a.title:focus::after {
   transform: translate3d(-100%, 0, 0);
   opacity: 0;
 }
@@ -137,7 +148,7 @@ nav a.title:focus::after {
 /* Add styles for mobile navigation menu */
 .burger-menu-content {
   position: absolute;
-  width: 100vw;
+  width: 50vw;
   height: fit-content;
   top: 0px;
   right: 0;
@@ -158,6 +169,8 @@ nav a.title:focus::after {
   line-height: 2rem;
   transition: 0.3s ease;
   margin: 1rem;
+  display: flex;
+  width: 80%;
 }
 
 .burger-menu-content > div.topNavItem {
@@ -166,7 +179,7 @@ nav a.title:focus::after {
 
 .burger-menu-content a:hover {
   /* color: limegreen; */
-  border-bottom: 1px solid #0e0e0e;
+  border-bottom: 3px solid #0e0e0e;
 }
 
 /* Media query for mobile view (adjust the max-width as needed) */

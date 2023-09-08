@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "./app.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Body from "./components/Body";
+// import Body from "./components/Body";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import About from "./components/About";
@@ -33,11 +33,11 @@ const App = () => {
         <Header />
         <CustomCursor />
         <Routes>
-          <Route path="home" element={<Home />} />
-          <Route path="portfolio" element={<Portfolio />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="about" element={<About />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </div>

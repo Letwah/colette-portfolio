@@ -29,17 +29,17 @@ const Header = () => {
 
   return (
     <nav>
-      {/* <div className="logo">
-        <Link to="/home">
+      <div className="logo">
+        <Link to="/">
           <h1>Colette Smith</h1>
         </Link>
-      </div> */}
+      </div>
       {windowWidth > 768 || (!burgerOpen && windowWidth > 768) ? (
-        <div>
-          <ul className="navigation">
-            <Link className="title" to="/home">
+        <div className="navigation">
+          <ul>
+            {/* <Link className="title" to="/">
               Colette Smith | Developer and Designer
-            </Link>
+            </Link> */}
 
             <li>
               <Link to="/about">About</Link>
