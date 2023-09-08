@@ -10,6 +10,7 @@ const PausedOverlay = ({ title, description }) => (
         top: 0;
         left: 0;
         background-color: #323232bf;
+        backdrop-filter: blur(2px);
         z-index: 1;
         font-family: sans-serif;
         display: flex;
@@ -28,6 +29,9 @@ const PausedOverlay = ({ title, description }) => (
           font-size: 0.7rem;
           font-weight: 600;
           font-family: "AzeretMono-Regular", monospace;
+        }
+        p a {
+          color: #ff0000;
         }
       `}
     >

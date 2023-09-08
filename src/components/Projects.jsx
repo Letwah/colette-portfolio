@@ -5,6 +5,10 @@ import HoverVideoPlayer from "react-hover-video-player";
 import PausedOverlay from "./projects/PausedOverlay";
 import LoadingOverlay from "./projects/LoadingOverlay";
 
+const handleButtonClick = (link) => {
+  window.open(link); // new tab
+};
+
 const Projects = () => {
   return (
     <>
@@ -12,6 +16,7 @@ const Projects = () => {
         <div className="projectsContainer top">
           <div className="projectsCard">
             <HoverVideoPlayer
+              className="vidContainer"
               videoSrc="./assets/videos/PexelsSearchProject.mp4"
               // The video and overlays should expand to fill the 16:9 container
 
@@ -23,9 +28,18 @@ const Projects = () => {
               }
               loadingOverlay={<LoadingOverlay />}
             />
+            <button
+              className="projectCTA"
+              onClick={() =>
+                handleButtonClick("https://vanillaslidesearch.netlify.app/")
+              }
+            >
+              View Live
+            </button>
           </div>
           <div className="projectsCard">
             <HoverVideoPlayer
+              className="vidContainer"
               videoSrc="./assets/videos/StudioFrieghtClone.mp4"
               pausedOverlay={
                 <PausedOverlay
@@ -35,9 +49,18 @@ const Projects = () => {
               }
               loadingOverlay={<LoadingOverlay />}
             />
+            <button
+              className="projectCTA"
+              onClick={() =>
+                handleButtonClick("https://studiofrieghtclone.netlify.app/")
+              }
+            >
+              View Live
+            </button>
           </div>
           <div className="projectsCard">
             <HoverVideoPlayer
+              className="vidContainer"
               videoSrc="./assets/videos/SimpsonsReactRedux.mp4"
               pausedOverlay={
                 <PausedOverlay
@@ -47,9 +70,20 @@ const Projects = () => {
               }
               loadingOverlay={<LoadingOverlay />}
             />
+            <button
+              className="projectCTA"
+              onClick={() =>
+                handleButtonClick(
+                  "https://simpsonsreactreduxtoolkit.netlify.app/"
+                )
+              }
+            >
+              View Live
+            </button>
           </div>
           <div className="projectsCard">
             <HoverVideoPlayer
+              className="vidContainer"
               videoSrc="./assets/videos/ColettesTodo.mp4"
               pausedOverlay={
                 <PausedOverlay
@@ -59,9 +93,18 @@ const Projects = () => {
               }
               loadingOverlay={<LoadingOverlay />}
             />
+            <button
+              className="projectCTA"
+              onClick={() =>
+                handleButtonClick("https://colettes-todo-app.netlify.app/")
+              }
+            >
+              View Live
+            </button>
           </div>
           <div className="projectsCard">
             <HoverVideoPlayer
+              className="vidContainer"
               videoSrc="./assets/videos/jimmyhutch.mp4"
               pausedOverlay={
                 <PausedOverlay
@@ -71,9 +114,16 @@ const Projects = () => {
               }
               loadingOverlay={<LoadingOverlay />}
             />
+            <button
+              className="projectCTA"
+              onClick={() => handleButtonClick("https://www.jimmyhutch.uk/")}
+            >
+              View Live
+            </button>
           </div>
           <div className="projectsCard">
             <HoverVideoPlayer
+              className="vidContainer"
               videoSrc="./assets/videos/AntiDivorceApp.mp4"
               pausedOverlay={
                 <PausedOverlay
@@ -82,7 +132,15 @@ const Projects = () => {
                 />
               }
               loadingOverlay={<LoadingOverlay />}
-            />
+            />{" "}
+            <button
+              className="projectCTA"
+              onClick={() =>
+                handleButtonClick("https://anti-divorce-hackathon.netlify.app/")
+              }
+            >
+              View Live
+            </button>
           </div>
         </div>
       </section>

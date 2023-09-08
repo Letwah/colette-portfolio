@@ -105,9 +105,9 @@ const Home = () => {
                     with a background in design.
                   </div>
                 </h2>
+
                 <p ref={paraRef} className="about-text">
-                  merging creative vision with evolving technical skills to
-                  create visually immersive digital experiences.
+                  I create visually immersive digital experiences.
                 </p>
               </div>
             </div>

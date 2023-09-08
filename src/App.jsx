@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "./app.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// import Body from "./components/Body";
+
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import About from "./components/About";
