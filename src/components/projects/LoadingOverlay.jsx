@@ -14,7 +14,7 @@ const LoadingOverlay = () => (
     className={css`
       /* Loading overlay covers the player */
       width: 100%;
-      height: auto;
+      height: 100%;
       /* Loading overlay has semi-transparent background so the player
           will be darkened while it's visible */
       background-color: rgba(0, 0, 0, 0.7);

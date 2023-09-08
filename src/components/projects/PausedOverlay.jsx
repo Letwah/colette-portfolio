@@ -9,7 +9,7 @@ const PausedOverlay = () => (
         /* Thumbnail image expands to cover the player */
         position: absolute;
         width: 100%;
-        height: auto;
+        height: 100%;
         top: 0;
         left: 0;
         object-fit: cover;

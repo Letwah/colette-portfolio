@@ -10,35 +10,47 @@ const Projects = () => {
     <>
       <section className="projects" id="projects">
         <div className="projectsContainer top">
-          <HoverVideoPlayer
-            videoSrc="https://youtu.be/C3p7ACl4qEM"
-            pausedOverlay={<PausedOverlay />}
-            loadingOverlay={<LoadingOverlay />}
-          />
           <div className="projectsCard">
-            <div className="projectImg">
-              <img src="./assets/images/hero/Mockup.jpg"></img>
-            </div>
+            <HoverVideoPlayer
+              videoSrc="./assets/videos/PexelsSearchProject.mp4"
+              pausedOverlay={<PausedOverlay />}
+              loadingOverlay={<LoadingOverlay />}
+            />
           </div>
           <div className="projectsCard">
-            <div className="projectImg">
-              <img src="./assets/images/hero/Mockup.jpg"></img>
-            </div>
+            <HoverVideoPlayer
+              videoSrc="./assets/videos/StudioFrieghtClone.mp4"
+              pausedOverlay={<PausedOverlay />}
+              loadingOverlay={<LoadingOverlay />}
+            />
           </div>
           <div className="projectsCard">
-            <div className="projectImg">
-              <img src="./assets/images/hero/Mockup.jpg"></img>
-            </div>
+            <HoverVideoPlayer
+              videoSrc="./assets/videos/SimpsonsReactRedux.mp4"
+              pausedOverlay={<PausedOverlay />}
+              loadingOverlay={<LoadingOverlay />}
+            />
           </div>
           <div className="projectsCard">
-            <div className="projectImg">
-              <img src="./assets/images/hero/Mockup.jpg"></img>
-            </div>
+            <HoverVideoPlayer
+              videoSrc="./assets/videos/ColettesTodo.mp4"
+              pausedOverlay={<PausedOverlay />}
+              loadingOverlay={<LoadingOverlay />}
+            />
           </div>
           <div className="projectsCard">
-            <div className="projectImg">
-              <img src="./assets/images/hero/Mockup.jpg"></img>
-            </div>
+            <HoverVideoPlayer
+              videoSrc="./assets/videos/jimmyhutch.mp4"
+              pausedOverlay={<PausedOverlay />}
+              loadingOverlay={<LoadingOverlay />}
+            />
+          </div>
+          <div className="projectsCard">
+            <HoverVideoPlayer
+              videoSrc="./assets/videos/AntiDivorceApp.mp4"
+              pausedOverlay={<PausedOverlay />}
+              loadingOverlay={<LoadingOverlay />}
+            />
           </div>
         </div>
       </section>
