@@ -41,9 +41,6 @@ const Header = () => {
               Colette Smith | Developer and Designer
             </Link> */}
 
-            <li>
-              <Link to="/about">About</Link>
-            </li>
             {/* <li>
               <Link to="/portfolio">Portfolio</Link>
             </li> */}

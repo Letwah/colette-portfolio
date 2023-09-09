@@ -1,7 +1,7 @@
 import React from "react";
-import { Slides } from "./Slides";
+import { Slides } from "./slider/Slides";
 
-import "./slider.css";
+import "./slider/slider.css";
 
 const Slider = () => {
   return (

@@ -43,6 +43,7 @@ export const Slides = () => {
     <>
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
+          className="slideImages"
           key={page}
           src={images[imageIndex]}
           custom={direction}

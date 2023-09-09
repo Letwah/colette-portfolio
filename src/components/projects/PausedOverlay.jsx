@@ -9,7 +9,7 @@ const PausedOverlay = ({ title, description }) => (
         height: 100%;
         top: 0;
         left: 0;
-        background-color: #323232bf;
+        background-color: var(--overlay-color);
         backdrop-filter: blur(2px);
         z-index: 1;
         font-family: sans-serif;
@@ -19,19 +19,19 @@ const PausedOverlay = ({ title, description }) => (
         flex-direction: column;
 
         h1 {
-          margin: 0 0 1rem 1rem;
-          color: #fffff8;
+          margin: 0 1rem 1rem 1rem;
+          color: var(--background-color);
           text-align: left;
         }
         p {
           margin: 0 1rem 0;
-          color: #fffff8;
-          font-size: 0.7rem;
-          font-weight: 600;
+          color: var(--background-color);
+          line-height: 1.1rem;
+          font-weight: 400;
           font-family: "AzeretMono-Regular", monospace;
         }
         p a {
-          color: #ff0000;
+          color: var(--link-color);
         }
       `}
     >

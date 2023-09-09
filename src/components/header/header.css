@@ -13,7 +13,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #fffff895;
+  background-color: var(--transparent-bg);
   backdrop-filter: blur(2px);
 }
 
@@ -23,7 +23,7 @@ nav {
   white-space: nowrap;
   margin: 0;
   letter-spacing: 0.1rem;
-  color: #0e0e0e;
+  /* color: #0e0e0e; */
   flex: 1;
 }
 
@@ -42,7 +42,7 @@ nav {
   position: relative;
   padding: 0.2em 0;
   text-decoration: none;
-  color: #0e0e0e;
+  /* color: #0e0e0e; */
   transition: 0.5s ease;
   overflow: hidden;
 }
@@ -54,7 +54,7 @@ nav {
   left: 0;
   width: 100%;
   height: 0.1em;
-  background-color: #0e0e0e;
+  background-color: var(--link-dec);
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
   opacity: 1;
@@ -112,7 +112,7 @@ nav {
 .burger-menu .line {
   width: 30px;
   height: 1px;
-  background-color: #0e0e0e;
+  background-color: var(--text-color);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -152,7 +152,7 @@ nav {
   height: fit-content;
   top: 0px;
   right: 0;
-  background-color: #fffff8d3;
+  background-color: var(--burger-bg);
   z-index: 2;
   border: 1px solid #0e0e0e;
   padding: 10px;
@@ -182,6 +182,9 @@ nav {
   border-bottom: 3px solid #0e0e0e;
 }
 
+button.burger-menu:hover {
+  background-color: transparent;
+}
 /* Media query for mobile view (adjust the max-width as needed) */
 @media (max-width: 768px) {
   .burger-menu-container {

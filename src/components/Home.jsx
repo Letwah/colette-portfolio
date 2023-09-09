@@ -2,18 +2,22 @@ import React, { useRef, useEffect, useState } from "react";
 import { gsap, Power3 } from "gsap";
 import "./home/home.css";
 import Projects from "./Projects";
+import Slider from "./Slider";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const homeRef = useRef(null);
   const textLinesRef = useRef([]);
   const imageRef = useRef(null);
   const paraRef = useRef(null);
+  const btnRef = useRef(null);
   const [animationPlayed, setAnimationPlayed] = useState(false);
 
   useEffect(() => {
     // Set initial visibility
     gsap.set(homeRef.current, { visibility: "visible" });
     gsap.set(paraRef.current, { visibility: "visible", opacity: 0 });
+    gsap.set(btnRef.current, { visibility: "visible", opacity: 0 });
 
     // Use the `to` method to animate your elements
     gsap.to(homeRef.current, {
@@ -59,6 +63,21 @@ const Home = () => {
         }
       );
 
+      gsap.fromTo(
+        btnRef.current,
+        {
+          opacity: 0,
+          y: 20,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          ease: Power3.easeOut,
+          delay: 1.8,
+        }
+      );
+
       setAnimationPlayed(true);
     }
 
@@ -81,7 +100,7 @@ const Home = () => {
   return (
     <>
       <section className="hero" ref={homeRef} id="hero">
-        <div className="container">
+        <div className="heroContainer">
           <div className="hero-inner">
             <div className="hero-content">
               <div className="hero-content-inner">
@@ -102,13 +121,17 @@ const Home = () => {
                     className="hero-content-line"
                     ref={(el) => textLinesRef.current.push(el)}
                   >
-                    with a background in design.
+                    with a background in visual design.
                   </div>
                 </h2>
 
                 <p ref={paraRef} className="about-text">
-                  I create visually immersive digital experiences.
+                  For more info please visit my linkedIn or take a look at my
+                  portfolio of recent projects.
                 </p>
+                <button ref={btnRef} className="homeCTA">
+                  <Link to="/projects">Projects</Link>
+                </button>
               </div>
             </div>
             <div className="hero-image">
@@ -125,6 +148,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Slider />
       <Projects />
     </>
   );
