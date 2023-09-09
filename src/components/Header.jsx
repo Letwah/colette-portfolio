@@ -27,6 +27,11 @@ const Header = () => {
     setMobileMenuOpen(!mobileMenuOpen); // Toggle mobile menu state
   };
 
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    dispatch(setBurgerOpen(false));
+  };
+
   return (
     <nav>
       <div className="logo">
@@ -67,16 +72,28 @@ const Header = () => {
         {mobileMenuOpen && (
           <div className="burger-menu-content">
             <div className="topNavItem">
-              <Link to="/about">About</Link>
+              <Link to="/projects" onClick={closeMobileMenu}>
+                Projects
+              </Link>
+            </div>
+
+            <div>
+              <Link to="/contact" onClick={closeMobileMenu}>
+                Contact
+              </Link>
             </div>
             <div>
-              <Link to="/portfolio">Portfolio</Link>
+              <a
+                href="https://www.linkedin.com/in/colette-smith-developer"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
             </div>
             <div>
-              <Link to="/projects">Projects</Link>
-            </div>
-            <div>
-              <Link to="/contact">Contact</Link>
+              <a href="https://www.colettesmith.com" target="_blank">
+                Squarespace Design
+              </a>
             </div>
           </div>
         )}

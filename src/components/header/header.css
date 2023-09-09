@@ -149,7 +149,7 @@ nav {
 .burger-menu-content {
   position: absolute;
   width: 50vw;
-  height: fit-content;
+  height: 100vh;
   top: 0px;
   right: 0;
   background-color: var(--burger-bg);
