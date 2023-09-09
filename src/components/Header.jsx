@@ -49,6 +49,15 @@ const Header = () => {
             {/* <li>
               <Link to="/portfolio">Portfolio</Link>
             </li> */}
+            <div>
+              <a
+                href="https://www.linkedin.com/in/colette-smith-developer"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </div>
+
             <li>
               <Link to="/projects">Projects</Link>
             </li>
