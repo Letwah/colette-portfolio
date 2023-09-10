@@ -14,7 +14,7 @@ const Contact = () => {
               u_time: "0.0",
               u_resolution: "vec2(800.0, 600.0)",
               u_mouse: "vec2(0.0, 0.0)",
-              image: "./assets/images/hero/Hutch.jpg", // Add the path to your image here
+              image: "./assets/images/hero/1st-mock-up.jpg", // Add the path to your image here
             }}
           />
 
