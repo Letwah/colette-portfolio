@@ -4,6 +4,7 @@ import "./home/home.css";
 import Projects from "./Projects";
 import Slider from "./Slider";
 import Marquee from "react-fast-marquee";
+
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -151,7 +152,6 @@ const Home = () => {
       </section>
       <Marquee>
         <h1>
-          {" "}
           ✱ FEATURED PROJECTS ✱ FEATURED PROJECTS ✱ FEATURED PROJECTS ✱ FEATURED
           PROJECTS ✱ FEATURED PROJECTS
         </h1>

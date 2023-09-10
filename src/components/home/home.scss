@@ -85,11 +85,20 @@
   }
 }
 
+div.marquee-container {
+  margin-top: 3rem;
+  transform: translateY(4.5rem);
+}
+
+div.child h1 {
+  font-size: 6rem;
+}
+
 @media screen and (min-width: 800px) {
   section.hero {
     div.heroContainer {
       div.hero-inner {
-        min-height: 50vh;
+        min-height: 70vh;
         flex-direction: row;
         align-items: flex-end;
         .hero-content {

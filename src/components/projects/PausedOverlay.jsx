@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 
-const PausedOverlay = ({ title, description }) => (
+// const PausedOverlay = ({ title, description }) => (
+const PausedOverlay = () => (
   <div>
     <div
       className={css`
@@ -18,7 +19,7 @@ const PausedOverlay = ({ title, description }) => (
         align-items: flex-start;
         flex-direction: column;
 
-        h1 {
+        h3 {
           margin: 0 1rem 1rem 1rem;
           color: var(--background-color);
           text-align: left;
@@ -34,10 +35,9 @@ const PausedOverlay = ({ title, description }) => (
           color: var(--link-color);
         }
       `}
-    >
-      <h1>{title}</h1>
-      <p>{description}</p>
-    </div>
+    ></div>
+    {/* <h3>{title}</h3>
+    <p>{description}</p> */}
   </div>
 );
 

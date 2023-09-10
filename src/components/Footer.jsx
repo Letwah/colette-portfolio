@@ -5,17 +5,19 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div>
-          <p>&copy; Copyright 2023</p>
-        </div>
+        <div className="footerContainer">
+          <div>
+            <p>&copy; Copyright 2023</p>
+          </div>
 
-        <div>
-          <p>
-            Built by
-            <a href="https://linkedIn/colette-smith" target="_blank">
-              &nbsp;Colette Smith
-            </a>
-          </p>
+          <div>
+            <p>
+              Built by
+              <a href="https://linkedIn/colette-smith" target="_blank">
+                &nbsp;Colette Smith
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </>

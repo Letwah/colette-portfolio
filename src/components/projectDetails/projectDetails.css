@@ -1,0 +1,26 @@
+/* .projectDetailsContainer {
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+} */
+
+.projectDetailsVideo {
+  position: relative;
+  padding-top: 56.25%;
+  /* display: flex;
+  justify-content: center;
+  width: 100%; */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projectDetailsText {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3vw;
+  height: 50vh;
+}

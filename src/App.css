@@ -88,6 +88,13 @@ h1 {
   margin-block-end: 0.1em;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
 a {
   color: var(--link-color);
   text-decoration: none;
