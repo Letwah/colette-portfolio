@@ -47,6 +47,10 @@ const ContactForm = () => {
       }}
       onSubmit={handleSubmit}
     >
+      <div className="contactText">
+        <h3>Please fill in the form below 🙌</h3>
+        <p>I look forward to hearing from you 🙂</p>
+      </div>
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" name="name" required />
