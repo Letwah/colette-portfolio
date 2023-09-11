@@ -21,7 +21,9 @@
 }
 
 section.projects {
-  height: auto;
+  height: fit-content;
+
+  margin-top: 10vh;
 }
 .projectsContainer.top {
   display: grid;
@@ -69,7 +71,7 @@ div.projectsTitle {
 }
 
 .projectsCard button {
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .vidContainer {
