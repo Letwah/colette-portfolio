@@ -1,18 +1,27 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+
 import GlslCanvas from "glslCanvas";
 
 const Shader = (props) => {
+  console.log("shader-mounted");
+  const [reloaded, setReloaded] = useState(false);
+
   const canvasRef = useRef();
   const containerRef = useRef();
 
   const resizer = (canvas, container) => {
-    canvas.width = container.clientWidth + window.devicePixelRatio;
-    canvas.height = container.clientHeight + window.devicePixelRatio;
-    canvas.style.width = container.clientWidth + "px";
-    canvas.style.height = container.clientHeight + "px";
+    // canvas.width = container.clientWidth + window.devicePixelRatio;
+    // canvas.height = container.clientHeight + window.devicePixelRatio;
+    // canvas.style.width = container.clientWidth + "px";
+    // canvas.style.height = container.clientHeight + "px";
+    setReloaded(true);
+    if (reloaded) {
+      location.reload();
+    }
   };
 
   useEffect(() => {
+    console.log("useEffect ran");
     const node = canvasRef.current;
     const container = containerRef.current;
     const sandbox = new GlslCanvas(canvasRef.current);
@@ -85,10 +94,12 @@ const Shader = (props) => {
     resizer(node, container);
 
     const handler = () => {
+      console.log("handling resize");
       if (
         node.clientWidth !== container.clientWidth ||
         node.clientHeight !== container.clientHeight
       ) {
+        console.log("if statement ran");
         resizer(canvasRef.current, containerRef.current);
       }
     };
