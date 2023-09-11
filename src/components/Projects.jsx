@@ -4,7 +4,7 @@ import "./projects/projects.css";
 import HoverVideoPlayer from "react-hover-video-player";
 import PausedOverlay from "./projects/PausedOverlay";
 import LoadingOverlay from "./projects/LoadingOverlay";
-import ProjectDetails from "./ProjectDetails";
+// import ProjectDetails from "./ProjectDetails";
 import { Link } from "react-router-dom";
 
 const handleButtonClick = (link) => {
