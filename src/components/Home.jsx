@@ -128,8 +128,14 @@ const Home = () => {
                 </h2>
 
                 <p ref={paraRef} className="about-text">
-                  For more info please visit my linkedIn or take a look at my
-                  portfolio of recent projects.
+                  For more info please visit my{" "}
+                  <a
+                    href="https://www.linkedin.com/in/colette-smith-developer"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>{" "}
+                  or take a look at my portfolio of recent projects.
                 </p>
                 <button ref={btnRef} className="homeCTA">
                   <Link to="/projects">Projects</Link>
