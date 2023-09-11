@@ -28,7 +28,7 @@ const Projects = () => {
               pausedOverlay={<PausedOverlay />}
               loadingOverlay={<LoadingOverlay />}
             />
-            <h3>"Pexels Search Project 🔍"</h3>
+            <h3>Pexels Search Project 🔍</h3>
             <p>
               Implements infinite scroll and retrieves data from an API using
               Fetch, featuring modal components.
