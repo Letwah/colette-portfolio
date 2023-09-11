@@ -1,28 +1,33 @@
 import React from "react";
 import "./projectDetails/projectDetails.css";
-import ReactPlayer from "react-player";
+import { useParams } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import VanillaJsSlide from "./projectDetails/VanillaJsSlide";
+import StudioFrieghtClone from "./projectDetails/StudioFrieghtClone";
+import SimpsonsAPI from "./projectDetails/SimpsonsAPI";
+import ToDo from "./projectDetails/Todo";
+import JimmyHutch from "./projectDetails/JimmyHutch";
+import Hackathon from "./projectDetails/Hackathon";
 
 const ProjectDetails = () => {
-  return (
-    <>
-      <section className="projectDetailsContainer">
-        <div className="projectDetailsVideo">
-          <ReactPlayer
-            url="./assets/videos/PexelsSearchProject.mp4"
-            className="react-player"
-            width="75%"
-            height="100%"
-            muted={true}
-            loop={true}
-          />
-        </div>
-        <div className="projectDetailsText">
-          <h2>Vanilla Slide Show</h2>
-          <p>bla bla bla</p>
-        </div>
-      </section>
-    </>
-  );
+  let { projectName } = useParams();
+
+  switch (projectName) {
+    case "vanilla-slide":
+      return <VanillaJsSlide />;
+    case "studio-frieght":
+      return <StudioFrieghtClone />;
+    case "simpsons-api":
+      return <SimpsonsAPI />;
+    case "todo":
+      return <ToDo />;
+    case "jimmy-hutch":
+      return <JimmyHutch />;
+    case "hackathon":
+      return <Hackathon />;
+    default:
+      return <div>Project not found</div>;
+  }
 };
 
 export default ProjectDetails;

@@ -5,12 +5,13 @@ import HoverVideoPlayer from "react-hover-video-player";
 import PausedOverlay from "./projects/PausedOverlay";
 import LoadingOverlay from "./projects/LoadingOverlay";
 import ProjectDetails from "./ProjectDetails";
+import { Link } from "react-router-dom";
 
 const handleButtonClick = (link) => {
   window.open(link); // new tab
 };
-
-const Projects = (title, description) => {
+// const Projects = (title, description) => {
+const Projects = () => {
   return (
     <>
       <section className="projects" id="projects">
@@ -32,6 +33,11 @@ const Projects = (title, description) => {
               Implements infinite scroll and retrieves data from an API using
               Fetch, featuring modal components.
             </p>
+            <div>
+              <Link to="/project-details/vanilla-slide">
+                <p>Project Details</p>
+              </Link>
+            </div>
             <button
               className="projectCTA"
               onClick={() =>
@@ -50,6 +56,11 @@ const Projects = (title, description) => {
             />
             <h3>Studio Frieght Clone ⚡️</h3>
             <p>A direct clone of the Studio Freight homepage.</p>
+            <div>
+              <Link to="/project-details/studio-frieght">
+                <p>Project Details</p>
+              </Link>
+            </div>
             <button
               className="projectCTA"
               onClick={() =>
@@ -77,6 +88,11 @@ const Projects = (title, description) => {
               A mobile-first React Redux app with filtering options, gathering
               data from the Simpsons API using Axios.
             </p>
+            <div>
+              <Link to="/project-details/simpsons-api">
+                <p>Project Details</p>
+              </Link>
+            </div>
             <button
               className="projectCTA"
               onClick={() =>
@@ -97,6 +113,11 @@ const Projects = (title, description) => {
             />
             <h3>Cute ToDo App 💅🏻</h3>
             <p>A DoTo react app, using GSAP to style.</p>
+            <div>
+              <Link to="/project-details/todo">
+                <p>Project Details</p>
+              </Link>
+            </div>
             <button
               className="projectCTA"
               onClick={() =>
@@ -115,6 +136,11 @@ const Projects = (title, description) => {
             />
             <h3>Jimmy Hutch Artist 🎨</h3>
             <p>A fullstack app designed to showcase an artist's portfolio.</p>
+            <div>
+              <Link to="/project-details/jimmy-hutch">
+                <p>Project Details</p>
+              </Link>
+            </div>
             <button
               className="projectCTA"
               onClick={() => handleButtonClick("https://www.jimmyhutch.uk/")}
@@ -134,6 +160,11 @@ const Projects = (title, description) => {
               A React Redux app for setting up key dates in a calendar and
               searching gifts.
             </p>
+            <div>
+              <Link to="/project-details/hackathon">
+                <p>Project Details</p>
+              </Link>
+            </div>
             <button
               className="projectCTA"
               onClick={() =>
@@ -145,8 +176,6 @@ const Projects = (title, description) => {
           </div>
         </div>
       </section>
-
-      <ProjectDetails />
     </>
   );
 };

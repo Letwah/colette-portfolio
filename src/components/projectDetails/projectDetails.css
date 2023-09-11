@@ -1,26 +1,73 @@
-/* .projectDetailsContainer {
-  width: 70vw;
+.projectDetailsContainer {
+  width: 94vw;
   height: auto;
   margin: 0 auto;
-} */
+}
+
+.projectDetailsContainer h2 {
+  margin-top: 9rem;
+  margin-left: 3vw;
+}
 
 .projectDetailsVideo {
   position: relative;
-  padding-top: 56.25%;
-  /* display: flex;
-  justify-content: center;
-  width: 100%; */
+  top: 10vh;
+  margin-top: 15%;
+  margin-bottom: 30%;
 }
 
 .react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .projectDetailsText {
   display: flex;
   flex-direction: column;
   padding: 0 3vw;
-  height: 50vh;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  bottom: 9rem;
+  position: relative;
+}
+
+.projectDetailsText h2,
+.projectDetailsText h3,
+.projectDetailsText p {
+  margin: 0.3rem;
+}
+
+.projectLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 88vw;
+  align-items: end;
+}
+
+.projectLinks div:nth-child(1) {
+  justify-items: start;
+}
+
+.projectLinks div:nth-child(2) {
+  text-align: center;
+}
+
+.projectLinks div:nth-child(3) {
+  text-align: right;
+}
+
+@media screen and (min-width: 900px) {
+  .projectDetailsVideo {
+    margin-top: 28%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projectDetailsVideo {
+    margin-top: 30%;
+    margin-bottom: -2rem;
+    top: 8vh;
+  }
 }
