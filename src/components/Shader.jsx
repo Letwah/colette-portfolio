@@ -10,14 +10,14 @@ const Shader = (props) => {
   const containerRef = useRef();
 
   const resizer = (canvas, container) => {
-    // canvas.width = container.clientWidth + window.devicePixelRatio;
-    // canvas.height = container.clientHeight + window.devicePixelRatio;
-    // canvas.style.width = container.clientWidth + "px";
-    // canvas.style.height = container.clientHeight + "px";
+    canvas.width = container.clientWidth + window.devicePixelRatio;
+    canvas.height = container.clientHeight + window.devicePixelRatio;
+    canvas.style.width = container.clientWidth + "px";
+    canvas.style.height = container.clientHeight + "px";
     setReloaded(true);
-    if (reloaded) {
-      location.reload();
-    }
+    // if (reloaded) {
+    //   location.reload();
+    // }
   };
 
   useEffect(() => {
