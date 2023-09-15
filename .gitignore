@@ -130,3 +130,4 @@ dist
 .pnp.*
 
 key.js
+.DS_Store
