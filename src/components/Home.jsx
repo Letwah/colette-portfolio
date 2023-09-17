@@ -6,6 +6,7 @@ import Slider from "./Slider";
 import Marquee from "react-fast-marquee";
 
 import { Link } from "react-router-dom";
+import ContactForm from "./contact/ContactForm";
 
 const Home = () => {
   const homeRef = useRef(null);
@@ -164,6 +165,13 @@ const Home = () => {
       </Marquee>
       <Slider />
       <Projects />
+      <ContactForm
+        style={{
+          width: "94vw",
+          margin: "2rem auto",
+          backgroundColor: "var(--transparent-bg)",
+        }}
+      />
     </>
   );
 };

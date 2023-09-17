@@ -49,20 +49,30 @@ const ContactForm = () => {
     >
       <div className="contactText">
         <h3>Please fill in the form below 🙌</h3>
-        <p>I look forward to hearing from you 🙂</p>
+        <p>
+          Alternatively if you'd rather just get in touch via{" "}
+          <a href="mailto:hello@colettesmith.com">email</a> please do. I look
+          forward to hearing from you 🙂
+        </p>
       </div>
       <div>
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="name">
+          <p>Name:</p>
+        </label>
         <input type="text" id="name" name="name" required />
         <p>{errors.name}</p>
       </div>
       <div>
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">
+          <p>Email:</p>
+        </label>
         <input type="email" id="email" name="email" required />
         <p>{errors.email}</p>
       </div>
       <div>
-        <label htmlFor="message">Message:</label>
+        <label htmlFor="message">
+          <p>Message:</p>
+        </label>
         <textarea id="message" name="message" required />
         <p>{errors.message}</p>
       </div>

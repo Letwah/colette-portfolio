@@ -7,19 +7,19 @@ const Hackathon = () => {
   return (
     <>
       <section className="projectDetailsContainer">
-        <div className="projectDetailsVideo">
-          <ReactPlayer
-            url="../assets/videos/AntiDivorceApp.mp4"
-            className="react-player"
-            width="75%"
-            height="100%"
-            muted={true}
-            loop={true}
-            playing={true}
-          />
-        </div>
         <div className="projectDetailsText">
           <h2>Project: Hackathon - Anti Divorce App</h2>
+          <div className="projectDetailsVideo">
+            <ReactPlayer
+              url="../assets/videos/AntiDivorceApp.mp4"
+              className="react-player"
+              width="75%"
+              height="100%"
+              muted={true}
+              loop={true}
+              playing={true}
+            />
+          </div>
 
           <h3>Tech Used:</h3>
           <p>Axios, SCSS, HTML5</p>
