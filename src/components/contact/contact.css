@@ -16,13 +16,6 @@ canvas {
 }
 
 .contactForm {
-  /* background: linear-gradient(
-    138deg,
-    #fff 0%,
-    rgba(255, 255, 255, 0.49) 50.98%,
-    rgba(255, 255, 255, 0) 100%s
-  ); */
-
   height: fit-content;
 
   padding: 5rem 2rem;
@@ -34,7 +27,6 @@ canvas {
   top: 10vh;
   position: fixed;
 
-  width: 90%;
   margin: 5% auto;
   left: 0;
   right: 0;

@@ -16,8 +16,10 @@ const Projects = () => {
     <>
       <section className="projects" id="projects">
         <div className="projectsTitle">
-          <h2>Projects ⤵</h2>
+          <h2>Projects</h2>
+          <img src="./assets/images/arrowdowright.png"></img>
         </div>
+
         <div className="projectsContainer top">
           <div className="projectsCard">
             <HoverVideoPlayer

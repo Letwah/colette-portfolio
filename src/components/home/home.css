@@ -100,6 +100,15 @@ div.child h1 {
     font-size: 6rem;
   }
 }
+section.homeContact {
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.homeContact > form {
+  background-color: var(--transparent-bg);
+}
+
 @media screen and (min-width: 940px) {
   div.marquee-container {
     margin-top: -2rem;

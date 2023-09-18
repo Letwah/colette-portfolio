@@ -128,11 +128,14 @@ div.child h1 {
   }
 }
 
-// form.homeForm {
-//   width: 94vw;
-//   margin: 2rem auto;
-//   background-color: var(--transparent-bg);
-// }
+section.homeContact {
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.homeContact > form {
+  background-color: var(--transparent-bg);
+}
 
 @media screen and (min-width: 940px) {
   div.marquee-container {

@@ -4,35 +4,20 @@
   margin: 0 auto;
 }
 
-.projectDetailsContainer h2 {
-  margin-top: 9rem;
-  margin-left: 3vw;
+.projectDetailsContainerInner {
+  display: grid;
+  grid-template-columns: 1fr;
 }
-
-/* .projectDetailsVideo {
-  margin: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-} */
+.projectDetailsContainer h2 {
+  margin-top: 5rem;
+  margin-left: 2vw;
+}
 
 .react-player {
   width: 95%;
   height: auto;
   margin: 0 auto;
 }
-
-/* .projectDetailsText {
-  display: flex;
-  flex-direction: column;
-  padding: 0 3vw;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  bottom: 9rem;
-  position: relative;
-} */
 
 .projectDetailsText h2,
 .projectDetailsText h3,
@@ -45,24 +30,46 @@
   grid-template-columns: 1fr 1fr 1fr;
   width: 88vw;
   align-items: end;
+  position: fixed;
+  bottom: 6rem;
+}
+
+.projectLinks div p {
+  border: 1px solid rgba(255, 0, 0, 0.415);
+  width: fit-content;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  background-color: var(--transparent-bg);
+  transition: 0.3s ease;
+}
+
+.projectLinks div p:hover {
+  background-color: var(--button-bg-hov);
 }
 
 .projectLinks div:nth-child(1) {
   justify-items: start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .projectLinks div:nth-child(2) {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 3rem;
 }
 
 .projectLinks div:nth-child(3) {
   text-align: right;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: flex-end;
 }
 
-@media screen and (min-width: 1200px) {
-  .react-player {
-    width: 65%;
-    height: auto;
-    margin: 0 auto;
+@media screen and (min-width: 800px) {
+  .projectDetailsContainerInner {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
   }
 }

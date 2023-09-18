@@ -165,13 +165,19 @@ const Home = () => {
       </Marquee>
       <Slider />
       <Projects />
-      <ContactForm
-        style={{
-          width: "94vw",
-          margin: "2rem auto",
-          backgroundColor: "var(--transparent-bg)",
-        }}
-      />
+      <section className="homeContact">
+        <div className="projectsTitle">
+          <h2>Contact</h2>
+          <img src="./assets/images/arrowdowright.png"></img>
+        </div>
+        <ContactForm
+          style={{
+            width: "94vw",
+            margin: "2rem auto",
+            backgroundColor: "var(--transparent-bg)",
+          }}
+        />
+      </section>
     </>
   );
 };
