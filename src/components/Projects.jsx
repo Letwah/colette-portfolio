@@ -26,8 +26,19 @@ const Projects = () => {
               className="vidContainer"
               videoSrc="./assets/videos/PexelsSearchProject.mp4"
               // The video and overlays should expand to fill the 16:9 container
-
-              pausedOverlay={<PausedOverlay />}
+              pausedOverlay={
+                <img
+                  src="./assets/images/projects/VanillaSlideThumb.png"
+                  alt=""
+                  style={{
+                    // Make the image expand to cover the video's dimensions
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              }
+              // pausedOverlay={<PausedOverlay />}
               loadingOverlay={<LoadingOverlay />}
             />
             <h3>Pexels Search Project 🔍</h3>
@@ -53,7 +64,18 @@ const Projects = () => {
             <HoverVideoPlayer
               className="vidContainer"
               videoSrc="./assets/videos/StudioFrieghtClone.mp4"
-              pausedOverlay={<PausedOverlay />}
+              pausedOverlay={
+                <img
+                  src="./assets/images/projects/StudioFrieghtThumb.png"
+                  alt=""
+                  style={{
+                    // Make the image expand to cover the video's dimensions
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              }
               loadingOverlay={<LoadingOverlay />}
             />
             <h3>Studio Frieght Clone ⚡️</h3>
@@ -77,11 +99,23 @@ const Projects = () => {
               className="vidContainer"
               videoSrc="./assets/videos/SimpsonsReactRedux.mp4"
               pausedOverlay={
-                <PausedOverlay
-                // title="Simpsons API 🍩"
-                // description="A mobile-first React Redux app with filtering options, gathering data from the Simpsons API using Axios"
+                <img
+                  src="./assets/images/projects/SimpsonsThumb.png"
+                  alt=""
+                  style={{
+                    // Make the image expand to cover the video's dimensions
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
                 />
               }
+              // pausedOverlay={
+              //   <PausedOverlay
+              //   // title="Simpsons API 🍩"
+              //   // description="A mobile-first React Redux app with filtering options, gathering data from the Simpsons API using Axios"
+              //   />
+              // }
               loadingOverlay={<LoadingOverlay />}
             />
 
@@ -110,7 +144,18 @@ const Projects = () => {
             <HoverVideoPlayer
               className="vidContainer"
               videoSrc="./assets/videos/ColettesTodo.mp4"
-              pausedOverlay={<PausedOverlay />}
+              pausedOverlay={
+                <img
+                  src="./assets/images/projects/ToDoThumb.png"
+                  alt=""
+                  style={{
+                    // Make the image expand to cover the video's dimensions
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              }
               loadingOverlay={<LoadingOverlay />}
             />
             <h3>Cute ToDo App 💅🏻</h3>
@@ -133,7 +178,18 @@ const Projects = () => {
             <HoverVideoPlayer
               className="vidContainer"
               videoSrc="./assets/videos/jimmyhutch.mp4"
-              pausedOverlay={<PausedOverlay />}
+              pausedOverlay={
+                <img
+                  src="./assets/images/projects/JimmyHutchThumb.png"
+                  alt=""
+                  style={{
+                    // Make the image expand to cover the video's dimensions
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              }
               loadingOverlay={<LoadingOverlay />}
             />
             <h3>Jimmy Hutch Artist 🎨</h3>
@@ -154,7 +210,18 @@ const Projects = () => {
             <HoverVideoPlayer
               className="vidContainer"
               videoSrc="./assets/videos/AntiDivorceApp.mp4"
-              pausedOverlay={<PausedOverlay />}
+              pausedOverlay={
+                <img
+                  src="./assets/images/projects/AntiDivorceThumb.png"
+                  alt=""
+                  style={{
+                    // Make the image expand to cover the video's dimensions
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              }
               loadingOverlay={<LoadingOverlay />}
             />
             <h3>Hackathon Project 🤓</h3>
