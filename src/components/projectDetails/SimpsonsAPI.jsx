@@ -39,6 +39,13 @@ const SimpsonsAPI = () => {
         </div>
         <div className="projectLinks">
           <div>
+            <Link to="/project-details/studio-frieght">
+              <p>
+                <img src="../assets/images/ph_arrow-left-bold.svg"></img>
+              </p>
+            </Link>
+          </div>
+          <div>
             <a
               href="https://simpsonsreactreduxtoolkit.netlify.app/"
               target="_blank"
@@ -47,15 +54,17 @@ const SimpsonsAPI = () => {
             </a>
           </div>
           <div>
-            <Link to="/project-details/todo">
-              <p>Next</p>
+            <a href="https://github.com/Letwah/simp-redux-tool" target="_blank">
+              <p>Git Repo</p>
+            </a>
+          </div>
+          <div>
+            <Link to="/project-details/hackathon">
+              <p>
+                <img src="../assets/images/ph_arrow-right-bold.svg"></img>
+              </p>
             </Link>
           </div>
-          {/* <div>
-            <Link to="/">
-              <p>HOME</p>
-            </Link>
-          </div> */}
         </div>
       </section>
     </>

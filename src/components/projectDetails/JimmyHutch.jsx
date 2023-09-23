@@ -39,20 +39,29 @@ const JimmyHutch = () => {
         </div>
         <div className="projectLinks">
           <div>
+            <Link to="/project-details/hackathon">
+              <p>
+                <img src="../assets/images/ph_arrow-left-bold.svg"></img>
+              </p>
+            </Link>
+          </div>
+          <div>
             <a href="https://www.jimmyhutch.uk/" target="_blank">
               <p>View Live</p>
             </a>
           </div>
           <div>
-            <Link to="/project-details/hackathon">
-              <p>Next</p>
+            <a href="https://github.com/Letwah/hutch-app" target="_blank">
+              <p>Git Repo</p>
+            </a>
+          </div>
+          <div>
+            <Link to="/project-details/vanilla-slide">
+              <p>
+                <img src="../assets/images/ph_arrow-right-bold.svg"></img>
+              </p>
             </Link>
           </div>
-          {/* <div>
-            <Link to="/">
-              <p>HOME</p>
-            </Link>
-          </div> */}
         </div>
       </section>
     </>

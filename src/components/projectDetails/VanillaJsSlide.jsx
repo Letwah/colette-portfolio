@@ -38,8 +38,10 @@ const VanillaJsSlide = () => {
         </div>
         <div className="projectLinks">
           <div>
-            <Link to="/">
-              <p>Back</p>
+            <Link to="/project-details/jimmy-hutch">
+              <p>
+                <img src="../assets/images/ph_arrow-left-bold.svg"></img>
+              </p>
             </Link>
           </div>
           <div>
@@ -48,13 +50,15 @@ const VanillaJsSlide = () => {
             </a>
           </div>
           <div>
-            <a href="https://vanillaslidesearch.netlify.app/" target="_blank">
+            <a href="https://github.com/Letwah/VanillaProject" target="_blank">
               <p>Git Repo</p>
             </a>
           </div>
           <div>
             <Link to="/project-details/studio-frieght">
-              <p>Next</p>
+              <p>
+                <img src="../assets/images/ph_arrow-right-bold.svg"></img>
+              </p>
             </Link>
           </div>
         </div>

@@ -37,6 +37,13 @@ const Hackathon = () => {
         </div>
         <div className="projectLinks">
           <div>
+            <Link to="/project-details/simpsons-api">
+              <p>
+                <img src="../assets/images/ph_arrow-left-bold.svg"></img>
+              </p>
+            </Link>
+          </div>
+          <div>
             <a
               href="https://anti-divorce-hackathon.netlify.app/"
               target="_blank"
@@ -45,15 +52,17 @@ const Hackathon = () => {
             </a>
           </div>
           <div>
-            <Link to="/project-details/vanilla-slide">
-              <p>Next</p>
+            <a href="https://github.com/Letwah/divorce-app" target="_blank">
+              <p>Git Repo</p>
+            </a>
+          </div>
+          <div>
+            <Link to="/project-details/jimmy-hutch">
+              <p>
+                <img src="../assets/images/ph_arrow-right-bold.svg"></img>
+              </p>
             </Link>
           </div>
-          {/* <div>
-            <Link to="/">
-              <p>HOME</p>
-            </Link>
-          </div> */}
         </div>
       </section>
     </>
