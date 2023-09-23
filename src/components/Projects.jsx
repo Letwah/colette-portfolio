@@ -41,6 +41,14 @@ const Projects = () => {
             />
             <h3>Jimmy Hutch Artist 🎨</h3>
             <p>A fullstack app designed to showcase an artist's portfolio.</p>
+            <div className="techIcons">
+              <img src="./assets/images/tech_icons/react.svg" />
+              <img src="./assets/images/tech_icons/redux.svg" />
+              <img src="./assets/images/tech_icons/styledcomponents.svg" />
+              <img src="./assets/images/tech_icons/sass.svg" />
+              <img src="./assets/images/tech_icons/figma.svg" />
+              <img src="./assets/images/tech_icons/greensock.svg" />
+            </div>
             <div>
               <Link to="/project-details/jimmy-hutch">
                 <p>Project Details</p>
@@ -73,11 +81,17 @@ const Projects = () => {
               // pausedOverlay={<PausedOverlay />}
               loadingOverlay={<LoadingOverlay />}
             />
-            <h3>Pexels Search Project 🔍</h3>
+            <h3>Vanilla Image Search🔍</h3>
             <p>
               Implements infinite scroll and retrieves data from an API using
               Fetch, featuring modal components.
             </p>
+            <div className="techIcons">
+              <img src="./assets/images/tech_icons/javascript.svg" />
+              <img src="./assets/images/tech_icons/sass.svg" />
+              <img src="./assets/images/tech_icons/greensock.svg" />
+              <img src="./assets/images/tech_icons/html5.svg" />
+            </div>
             <div>
               <Link to="/project-details/vanilla-slide">
                 <p>Project Details</p>
@@ -112,6 +126,11 @@ const Projects = () => {
             />
             <h3>Studio Frieght Clone ⚡️</h3>
             <p>A direct clone of the Studio Freight homepage.</p>
+            <div className="techIcons">
+              <img src="./assets/images/tech_icons/javascript.svg" />
+              <img src="./assets/images/tech_icons/sass.svg" />
+              <img src="./assets/images/tech_icons/html5.svg" />
+            </div>
             <div>
               <Link to="/project-details/studio-frieght">
                 <p>Project Details</p>
@@ -156,6 +175,12 @@ const Projects = () => {
               A mobile-first React Redux app with filtering options, gathering
               data from the Simpsons API using Axios.
             </p>
+            <div className="techIcons">
+              <img src="./assets/images/tech_icons/react.svg" />
+              <img src="./assets/images/tech_icons/redux.svg" />
+
+              <img src="./assets/images/tech_icons/figma.svg" />
+            </div>
             <div>
               <Link to="/project-details/simpsons-api">
                 <p>Project Details</p>
@@ -230,6 +255,13 @@ const Projects = () => {
               A React Redux app for setting up key dates in a calendar and
               searching gifts.
             </p>
+            <div className="techIcons">
+              <img src="./assets/images/tech_icons/react.svg" />
+              <img src="./assets/images/tech_icons/redux.svg" />
+
+              <img src="./assets/images/tech_icons/sass.svg" />
+              <img src="./assets/images/tech_icons/figma.svg" />
+            </div>
             <div>
               <Link to="/project-details/hackathon">
                 <p>Project Details</p>

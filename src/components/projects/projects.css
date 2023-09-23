@@ -22,9 +22,9 @@
 
 section.projects {
   height: fit-content;
-
   margin-top: 10vh;
 }
+
 .projectsContainer.top {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -79,12 +79,21 @@ div.projectsTitle {
   animation: grain 1.5s steps(6) infinite;
 }
 
+.techIcons img {
+  width: 2rem;
+  margin: 0 0.5rem;
+}
+
 .projectsCard button {
   margin: 1rem auto;
 }
 
 .vidContainer {
-  border: 2px solid var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+}
+
+.vidContainer > div > img {
   border-radius: 4px;
 }
 

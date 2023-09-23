@@ -44,7 +44,7 @@
 }
 
 .projectLinks div p {
-  border: 1px solid rgba(255, 0, 0, 0.415);
+  border: 1px solid var(--button-bg-hov);
   width: fit-content;
   padding: 0.5rem 0.8rem;
   border-radius: 4px;
@@ -69,9 +69,16 @@
 }
 
 video {
-  border: 1px solid;
+  border: 1px solid var(--text-color);
   border-radius: 4px;
-  box-shadow: var(--link-dec) 0.5em 0.5em 0em;
+  box-shadow: var(--overlay-color) 0.5em 0.5em 0em;
+  width: 100%;
+  height: auto;
+}
+
+.react-player {
+  width: 75%;
+  height: auto !important;
 }
 
 /* .projectLinks div:nth-child(1) {
@@ -114,5 +121,9 @@ video {
 
   .projectDetailsVideo {
     padding: 2rem;
+  }
+  .react-player {
+    width: 75%;
+    height: auto;
   }
 }
