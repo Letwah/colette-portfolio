@@ -24,6 +24,38 @@ const Projects = () => {
           <div className="projectsCard">
             <HoverVideoPlayer
               className="vidContainer"
+              videoSrc="./assets/videos/jimmyhutch.mp4"
+              pausedOverlay={
+                <img
+                  src="./assets/images/projects/JimmyHutchThumb.png"
+                  alt=""
+                  style={{
+                    // Make the image expand to cover the video's dimensions
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              }
+              loadingOverlay={<LoadingOverlay />}
+            />
+            <h3>Jimmy Hutch Artist 🎨</h3>
+            <p>A fullstack app designed to showcase an artist's portfolio.</p>
+            <div>
+              <Link to="/project-details/jimmy-hutch">
+                <p>Project Details</p>
+              </Link>
+            </div>
+            <button
+              className="projectCTA"
+              onClick={() => handleButtonClick("https://www.jimmyhutch.uk/")}
+            >
+              View Live
+            </button>
+          </div>
+          <div className="projectsCard">
+            <HoverVideoPlayer
+              className="vidContainer"
               videoSrc="./assets/videos/PexelsSearchProject.mp4"
               // The video and overlays should expand to fill the 16:9 container
               pausedOverlay={
@@ -140,7 +172,7 @@ const Projects = () => {
               View Live
             </button>
           </div>
-          <div className="projectsCard">
+          {/* <div className="projectsCard">
             <HoverVideoPlayer
               className="vidContainer"
               videoSrc="./assets/videos/ColettesTodo.mp4"
@@ -173,39 +205,8 @@ const Projects = () => {
             >
               View Live
             </button>
-          </div>
-          <div className="projectsCard">
-            <HoverVideoPlayer
-              className="vidContainer"
-              videoSrc="./assets/videos/jimmyhutch.mp4"
-              pausedOverlay={
-                <img
-                  src="./assets/images/projects/JimmyHutchThumb.png"
-                  alt=""
-                  style={{
-                    // Make the image expand to cover the video's dimensions
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              }
-              loadingOverlay={<LoadingOverlay />}
-            />
-            <h3>Jimmy Hutch Artist 🎨</h3>
-            <p>A fullstack app designed to showcase an artist's portfolio.</p>
-            <div>
-              <Link to="/project-details/jimmy-hutch">
-                <p>Project Details</p>
-              </Link>
-            </div>
-            <button
-              className="projectCTA"
-              onClick={() => handleButtonClick("https://www.jimmyhutch.uk/")}
-            >
-              View Live
-            </button>
-          </div>
+          </div> */}
+
           <div className="projectsCard">
             <HoverVideoPlayer
               className="vidContainer"
