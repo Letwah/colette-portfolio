@@ -38,18 +38,23 @@ const VanillaJsSlide = () => {
         </div>
         <div className="projectLinks">
           <div>
+            <Link to="/">
+              <p>Back</p>
+            </Link>
+          </div>
+          <div>
             <a href="https://vanillaslidesearch.netlify.app/" target="_blank">
-              <p>View Live site</p>
+              <p>View Live</p>
+            </a>
+          </div>
+          <div>
+            <a href="https://vanillaslidesearch.netlify.app/" target="_blank">
+              <p>Git Repo</p>
             </a>
           </div>
           <div>
             <Link to="/project-details/studio-frieght">
-              <p>Next Project</p>
-            </Link>
-          </div>
-          <div>
-            <Link to="/">
-              <p>HOME</p>
+              <p>Next</p>
             </Link>
           </div>
         </div>

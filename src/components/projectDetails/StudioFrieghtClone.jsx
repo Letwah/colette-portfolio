@@ -38,19 +38,19 @@ const StudioFrieghtClone = () => {
         <div className="projectLinks">
           <div>
             <a href="https://studiofrieghtclone.netlify.app/" target="_blank">
-              <p>View Live site</p>
+              <p>View Live</p>
             </a>
           </div>
           <div>
             <Link to="/project-details/simpsons-api">
-              <p>Next Project</p>
+              <p>Next</p>
             </Link>
           </div>
-          <div>
+          {/* <div>
             <Link to="/">
               <p>HOME</p>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

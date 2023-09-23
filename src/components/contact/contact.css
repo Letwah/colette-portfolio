@@ -67,11 +67,13 @@ textarea#message {
 @media only screen and (min-width: 800px) {
   .contactForm {
     max-width: 50vw;
+    top: 15%;
   }
   textarea {
     width: 30vw;
-    height: 30vh;
+    height: 10rem;
   }
+
   .contactImg img {
     max-width: 50vw;
   }

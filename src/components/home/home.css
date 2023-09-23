@@ -31,7 +31,7 @@
   flex: 1;
 }
 .hero .heroContainer .hero-inner .hero-content .hero-content-inner h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .hero .heroContainer .hero-inner .hero-content .hero-content-inner h2 .hero-content-line {
@@ -82,7 +82,7 @@ div.child h1 {
 
 @media screen and (min-width: 800px) {
   section.hero div.heroContainer div.hero-inner {
-    min-height: 70vh;
+    min-height: 66vh;
     flex-direction: row;
     align-items: flex-end;
   }

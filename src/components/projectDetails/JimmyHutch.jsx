@@ -40,19 +40,19 @@ const JimmyHutch = () => {
         <div className="projectLinks">
           <div>
             <a href="https://www.jimmyhutch.uk/" target="_blank">
-              <p>View Live site</p>
+              <p>View Live</p>
             </a>
           </div>
           <div>
             <Link to="/project-details/hackathon">
-              <p>Next Project</p>
+              <p>Next</p>
             </Link>
           </div>
-          <div>
+          {/* <div>
             <Link to="/">
               <p>HOME</p>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
