@@ -51,8 +51,10 @@ const ContactForm = () => {
         <h3>Please fill in the form below 🙌</h3>
         <p>
           Alternatively if you'd rather just get in touch via{" "}
-          <a href="mailto:hello@colettesmith.com">email</a> please do. I look
-          forward to hearing from you 🙂
+          <a href="mailto:hello@colettesmith.com">email</a> or{" "}
+          <a href="tel:+44 7963 470 269">ring</a> please do. For a copy of my cv
+          please click <a href="./assets/Colette_Smith_CV_2023.pdf">here</a>. I
+          look forward to hearing from you 🙂.
         </p>
       </div>
       <div>

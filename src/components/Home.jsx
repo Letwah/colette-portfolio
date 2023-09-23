@@ -118,7 +118,7 @@ const Home = () => {
                     className="hero-content-line"
                     ref={(el) => textLinesRef.current.push(el)}
                   >
-                    a creative front-end developer
+                    a JavaScript front-end developer
                   </div>
                   <div
                     className="hero-content-line"
