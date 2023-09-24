@@ -124,7 +124,7 @@ button {
   border: 1px solid var(--link-color);
   background-color: var(--transparent-bg);
   transition: 0.3s ease;
-  color: var(--button-text);
+  color: var(--link-color);
 }
 
 button:hover {

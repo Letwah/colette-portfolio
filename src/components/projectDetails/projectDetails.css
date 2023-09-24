@@ -69,13 +69,16 @@
 }
 
 video {
-  border: 1px solid var(--text-color);
+  /* border: 1px solid var(--text-color); */
   border-radius: 4px;
   box-shadow: var(--overlay-color) 0.5em 0.5em 0em;
   width: 100%;
   height: auto;
 }
 
+.projectDetailsContainer video {
+  border: 1px solid var(--text-color);
+}
 .react-player {
   width: 75%;
   height: auto !important;
