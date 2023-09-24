@@ -30,10 +30,31 @@ const VanillaJsSlide = () => {
             </p>
             <h3>What It Demonstrates:</h3>
             <p>
-              Proficiency in writing vanilla JavaScript, DOM manipulation,
-              advanced styling and layout techniques, along with GSAP animation
-              integration.
+              <p>
+                <strong>Vanilla JavaScript Proficiency:</strong> Implemented
+                infinite scroll and API data retrieval using Fetch, showcasing
+                advanced JavaScript skills.
+              </p>
+              <p>
+                <strong> DOM Manipulation Mastery:</strong> Demonstrated
+                expertise in manipulating the DOM for dynamic content rendering.
+              </p>
+              <p>
+                <strong> Advanced Styling Techniques:</strong> Utilized CSS,
+                SCSS, and HTML 5 for refined and responsive layouts.
+              </p>
+              <p>
+                <strong>GSAP Animation Integration:</strong> Integrated GSAP for
+                engaging and interactive user interface elements, including the
+                modal component implementation, for an enhanced user experience.
+              </p>
             </p>
+            <div className="techIcons">
+              <img src="../assets/images/tech_icons/javascript.svg" />
+              <img src="../assets/images/tech_icons/sass.svg" />
+              <img src="../assets/images/tech_icons/greensock.svg" />
+              <img src="../assets/images/tech_icons/html5.svg" />
+            </div>
           </div>
         </div>
         <div className="projectLinks">

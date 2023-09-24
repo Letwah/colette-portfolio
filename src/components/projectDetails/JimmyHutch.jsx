@@ -22,7 +22,8 @@ const JimmyHutch = () => {
           </div>
           <div className="projectDetailsText">
             <h3>Tech Used:</h3>
-            <p>Full Stach React Redux app, using GSAP and SCSS</p>
+
+            <p>Full Stack React Redux app, using GSAP and SCSS</p>
             <h3>What it Does: </h3>
             <p>
               This is a React Redux app designed to showcase an artist's
@@ -30,11 +31,46 @@ const JimmyHutch = () => {
             </p>
             <h3>What It Demonstrates:</h3>
             <p>
-              Utilised React Redux Toolkit, CSS, Styled Components for homepage
-              animations, Joi for validation, Toastify for notifications, GSAP
-              (Greensock) for animations (including modal and menu grid
-              animations), SQL database for data storage, and cPanel.
+              <p>
+                <strong>Full Stack Development:</strong> Created a React Redux
+                app with GSAP animations and SCSS styling, showcasing
+                proficiency in modern frontend technologies.
+              </p>
+              <p>
+                <strong>Animation Expertise:</strong> Implemented intricate
+                animations using GSAP, enhancing user interaction and visual
+                appeal.
+              </p>
+              <p>
+                <strong>State Management with Redux:</strong> Utilized Redux
+                Toolkit for efficient state management, ensuring seamless user
+                experience.
+              </p>
+              <p>
+                <strong>Form Validation and Notifications:</strong> Integrated
+                Joi for validation and Toastify for user-friendly notifications,
+                prioritizing data integrity and user feedback.
+              </p>
+              <p>
+                <strong>Database Integration:</strong> Employed SQL for
+                effective data storage and retrieval, demonstrating proficiency
+                in backend integration.
+              </p>
+              <p>
+                <strong>Deployment and Hosting:</strong> Successfully deployed
+                using cPanel, showcasing the ability to manage web hosting
+                environments.
+              </p>
             </p>
+
+            <div className="techIcons">
+              <img src="../assets/images/tech_icons/react.svg" />
+              <img src="../assets/images/tech_icons/redux.svg" />
+              <img src="../assets/images/tech_icons/styledcomponents.svg" />
+              <img src="../assets/images/tech_icons/sass.svg" />
+              <img src="../assets/images/tech_icons/figma.svg" />
+              <img src="../assets/images/tech_icons/greensock.svg" />
+            </div>
           </div>
         </div>
         <div className="projectLinks">

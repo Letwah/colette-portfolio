@@ -29,10 +29,36 @@ const StudioFrieghtClone = () => {
             <p>A direct clone of the Studio Freight homepage.</p>
             <h3>What It Demonstrates:</h3>
             <p>
-              Showcases HTML and CSS skills for closely replicating the original
-              site's appearance, utilising CSS Grid, SCSS pre-processing
-              language, and adhering to HTML5 structure.
+              <p>
+                <strong>Precision in HTML & CSS:</strong> Produced an accurate
+                clone of the Studio Freight homepage, highlighting mastery in
+                HTML and CSS.
+              </p>
+              <p>
+                <strong>Efficient Use of SCSS:</strong> Employed SCSS for
+                streamlined and maintainable styling, showcasing proficiency in
+                CSS pre-processing.
+              </p>
+              <p>
+                <strong>Utilization of CSS Grid:</strong> Demonstrated expertise
+                in layout design through thes use of CSS Grid for responsive web
+                design.
+              </p>
+              <p>
+                <strong>HTML5 Structuring:</strong> Adhered to HTML5 best
+                practices for semantic and well-structured markup.
+              </p>
+              <p>
+                <strong>Custom JS Cursor Implementation:</strong> Implemented a
+                custom cursor using vanilla JavaScript, showcasing an added
+                layer of interactivity.
+              </p>
             </p>
+            <div className="techIcons">
+              <img src="../assets/images/tech_icons/javascript.svg" />
+              <img src="../assets/images/tech_icons/sass.svg" />
+              <img src="../assets/images/tech_icons/html5.svg" />
+            </div>
           </div>
         </div>
         <div className="projectLinks">

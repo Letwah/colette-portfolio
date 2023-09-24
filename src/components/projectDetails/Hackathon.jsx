@@ -30,9 +30,28 @@ const Hackathon = () => {
             </p>
             <h3>What It Demonstrates:</h3>
             <p>
-              Responsible for designing and implementing styles, collaborating
-              with a team to integrate SCSS into the app.
+              <strong>Efficient API Integration with Axios:</strong>
+              Successfully retrieved data for setting up key dates and gift
+              searching, demonstrating proficiency in working with external
+              APIs.
             </p>
+            <p>
+              <strong>SCSS Styling Mastery:</strong>
+              Designed and implemented styles using SCSS, showcasing expertise
+              in modern and maintainable CSS pre-processing.{" "}
+            </p>
+            <p>
+              <strong>Collaborative Teamwork:</strong> Worked collaboratively
+              with a team to integrate SCSS into the app, demonstrating strong
+              communication and teamwork skills.
+            </p>
+            <div className="techIcons">
+              <img src="../assets/images/tech_icons/react.svg" />
+              <img src="../assets/images/tech_icons/redux.svg" />
+
+              <img src="../assets/images/tech_icons/sass.svg" />
+              <img src="../assets/images/tech_icons/figma.svg" />
+            </div>
           </div>
         </div>
         <div className="projectLinks">

@@ -31,10 +31,34 @@ const SimpsonsAPI = () => {
             </p>
             <h3>What It Demonstrates:</h3>
             <p>
-              Demonstrates setting up an app using React Redux Toolkit for data
-              retrieval and filtering from an API, as well as complete styling
-              from scratch.
+              <p>
+                <strong> React Redux Proficiency:</strong> Created a
+                mobile-first app utilizing React Redux and Toolkit, showcasing
+                advanced state management and data handling.
+              </p>
+              <p>
+                <strong>API Integration with Axios:</strong> Retrieved data from
+                the Simpsons API, demonstrating proficiency in working with
+                external data sources.
+              </p>
+              <p>
+                <strong>Interactive Features:</strong> Implemented
+                functionalities like filtering, liking, disliking, deleting, and
+                character direction toggling, highlighting user-friendly
+                interactivity.
+              </p>
+              <p>
+                <strong>Comprehensive Styling:</strong> Designed the app's
+                styling from scratch using HTML, CSS, and SCSS, showcasing a
+                mastery of frontend design.
+              </p>
             </p>
+            <div className="techIcons">
+              <img src="../assets/images/tech_icons/react.svg" />
+              <img src="../assets/images/tech_icons/redux.svg" />
+
+              <img src="../assets/images/tech_icons/figma.svg" />
+            </div>
           </div>
         </div>
         <div className="projectLinks">
