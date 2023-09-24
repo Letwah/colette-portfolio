@@ -4,7 +4,8 @@ footer {
   bottom: 0;
   left: 0;
   z-index: 1;
-
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   background-color: var(--transparent-bg);
 }
 
