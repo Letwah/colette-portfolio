@@ -57,7 +57,11 @@ const Header = () => {
                 LinkedIn
               </a>
             </div>
-
+            <div>
+              <a href="./assets/Colette_Smith_CV_2023.pdf" target="_blank">
+                CV
+              </a>
+            </div>
             <li>
               <Link to="/projects">Projects</Link>
             </li>
@@ -100,8 +104,8 @@ const Header = () => {
               </a>
             </div>
             <div>
-              <a href="https://www.colettesmith.com" target="_blank">
-                Squarespace Design
+              <a href="./assets/Colette_Smith_CV_2023.pdf" target="_blank">
+                CV
               </a>
             </div>
           </div>
