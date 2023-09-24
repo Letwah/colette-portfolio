@@ -44,14 +44,20 @@
     --background-color: #161616;
     --transparent-bg: #fffff80f;
     --text-color: #fffff8;
-    --link-color: #ff0000;
-    --button-text: fffff8;
+    --link-dec: #161616;
+    --link-color: #00ffff;
+    --button-bg-hov: #00ffff76;
+    --button-text: #00ffff;
     --link-dec: #fffff8;
     --overlay-color: #fffff8a5;
   }
 
   html {
     color-scheme: dark;
+  }
+
+  .techIcons img {
+    filter: invert(1);
   }
 }
 
@@ -118,19 +124,24 @@ button {
   border: 1px solid var(--link-color);
   background-color: var(--transparent-bg);
   transition: 0.3s ease;
+  color: var(--button-text);
 }
 
 button:hover {
   background-color: var(--button-bg-hov);
-  color: var(--background-color);
+  color: var(--link-color);
 }
 
 /* button.projectCTA {
   color: var(--button-text);
-  transition: 0.3s ease;
+  transition: 0.3s ease;s
 }
 
 button.projectCTA:hover {
+  color: var(--button-text);
+} */
+
+/* button.projectCTA:hover {
   animation: pulse 1s ease-in infinite;
   background: radial-gradient(circle, #ff0000c8 43%, transparent 50%) 0 0 / 1em
       1em,
@@ -138,7 +149,7 @@ button.projectCTA:hover {
       2em;
   color: var(--text-color);
   transition: all 0.3s ease;
-} */
+}  */
 
 @keyframes pulse {
   50% {

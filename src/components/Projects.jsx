@@ -22,23 +22,25 @@ const Projects = () => {
 
         <div className="projectsContainer top">
           <div className="projectsCard">
-            <HoverVideoPlayer
-              className="vidContainer"
-              videoSrc="./assets/videos/jimmyhutch.mp4"
-              pausedOverlay={
-                <img
-                  src="./assets/images/projects/JimmyHutchThumb.png"
-                  alt=""
-                  style={{
-                    // Make the image expand to cover the video's dimensions
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              }
-              loadingOverlay={<LoadingOverlay />}
-            />
+            <Link to="/project-details/jimmy-hutch">
+              <HoverVideoPlayer
+                className="vidContainer"
+                videoSrc="./assets/videos/jimmyhutch.mp4"
+                pausedOverlay={
+                  <img
+                    src="./assets/images/projects/JimmyHutchThumb.png"
+                    alt=""
+                    style={{
+                      // Make the image expand to cover the video's dimensions
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                }
+                loadingOverlay={<LoadingOverlay />}
+              />
+            </Link>
             <h3>Jimmy Hutch Artist 🎨</h3>
             <p>A fullstack app designed to showcase an artist's portfolio.</p>
             <div className="techIcons">
@@ -49,38 +51,49 @@ const Projects = () => {
               <img src="./assets/images/tech_icons/figma.svg" />
               <img src="./assets/images/tech_icons/greensock.svg" />
             </div>
-            <div>
-              <Link to="/project-details/jimmy-hutch">
-                <p>Project Details</p>
-              </Link>
+
+            <div className="cardCTAs">
+              <button className="projectCTA">
+                <Link to="/project-details/jimmy-hutch">Project Info</Link>
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() => handleButtonClick("https://www.jimmyhutch.uk/")}
+              >
+                Live Site
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick("https://github.com/Letwah/hutch-app")
+                }
+              >
+                Git Repo
+              </button>
             </div>
-            <button
-              className="projectCTA"
-              onClick={() => handleButtonClick("https://www.jimmyhutch.uk/")}
-            >
-              View Live
-            </button>
           </div>
           <div className="projectsCard">
-            <HoverVideoPlayer
-              className="vidContainer"
-              videoSrc="./assets/videos/PexelsSearchProject.mp4"
-              // The video and overlays should expand to fill the 16:9 container
-              pausedOverlay={
-                <img
-                  src="./assets/images/projects/VanillaSlideThumb.png"
-                  alt=""
-                  style={{
-                    // Make the image expand to cover the video's dimensions
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              }
-              // pausedOverlay={<PausedOverlay />}
-              loadingOverlay={<LoadingOverlay />}
-            />
+            <Link to="/project-details/vanilla-slide">
+              <HoverVideoPlayer
+                className="vidContainer"
+                videoSrc="./assets/videos/PexelsSearchProject.mp4"
+                // The video and overlays should expand to fill the 16:9 container
+                pausedOverlay={
+                  <img
+                    src="./assets/images/projects/VanillaSlideThumb.png"
+                    alt=""
+                    style={{
+                      // Make the image expand to cover the video's dimensions
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                }
+                // pausedOverlay={<PausedOverlay />}
+                loadingOverlay={<LoadingOverlay />}
+              />
+            </Link>
             <h3>Vanilla Image Search🔍</h3>
             <p>
               Implements infinite scroll and retrieves data from an API using
@@ -92,38 +105,49 @@ const Projects = () => {
               <img src="./assets/images/tech_icons/greensock.svg" />
               <img src="./assets/images/tech_icons/html5.svg" />
             </div>
-            <div>
-              <Link to="/project-details/vanilla-slide">
-                <p>Project Details</p>
-              </Link>
+
+            <div className="cardCTAs">
+              <button className="projectCTA">
+                <Link to="/project-details/vanilla-slide">Project Info</Link>
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick("https://vanillaslidesearch.netlify.app/")
+                }
+              >
+                Live Site
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick("https://github.com/Letwah/VanillaProject")
+                }
+              >
+                Git Repo
+              </button>
             </div>
-            <button
-              className="projectCTA"
-              onClick={() =>
-                handleButtonClick("https://vanillaslidesearch.netlify.app/")
-              }
-            >
-              View Live
-            </button>
           </div>
           <div className="projectsCard">
-            <HoverVideoPlayer
-              className="vidContainer"
-              videoSrc="./assets/videos/StudioFrieghtClone.mp4"
-              pausedOverlay={
-                <img
-                  src="./assets/images/projects/StudioFrieghtThumb.png"
-                  alt=""
-                  style={{
-                    // Make the image expand to cover the video's dimensions
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              }
-              loadingOverlay={<LoadingOverlay />}
-            />
+            <Link to="/project-details/studio-frieght">
+              <HoverVideoPlayer
+                className="vidContainer"
+                videoSrc="./assets/videos/StudioFrieghtClone.mp4"
+                pausedOverlay={
+                  <img
+                    src="./assets/images/projects/StudioFrieghtThumb.png"
+                    alt=""
+                    style={{
+                      // Make the image expand to cover the video's dimensions
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                }
+                loadingOverlay={<LoadingOverlay />}
+              />
+            </Link>
             <h3>Studio Frieght Clone ⚡️</h3>
             <p>A direct clone of the Studio Freight homepage.</p>
             <div className="techIcons">
@@ -131,45 +155,55 @@ const Projects = () => {
               <img src="./assets/images/tech_icons/sass.svg" />
               <img src="./assets/images/tech_icons/html5.svg" />
             </div>
-            <div>
-              <Link to="/project-details/studio-frieght">
-                <p>Project Details</p>
-              </Link>
+
+            <div className="cardCTAs">
+              <button className="projectCTA">
+                <Link to="/project-details/studio-frieght">Project Info</Link>
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick("https://studiofrieghtclone.netlify.app/")
+                }
+              >
+                Live Site
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick("https://github.com/Letwah/StudioF")
+                }
+              >
+                Git Repo
+              </button>
             </div>
-            <button
-              className="projectCTA"
-              onClick={() =>
-                handleButtonClick("https://studiofrieghtclone.netlify.app/")
-              }
-            >
-              View Live
-            </button>
           </div>
           <div className="projectsCard">
-            <HoverVideoPlayer
-              className="vidContainer"
-              videoSrc="./assets/videos/SimpsonsReactRedux.mp4"
-              pausedOverlay={
-                <img
-                  src="./assets/images/projects/SimpsonsThumb.png"
-                  alt=""
-                  style={{
-                    // Make the image expand to cover the video's dimensions
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              }
-              // pausedOverlay={
-              //   <PausedOverlay
-              //   // title="Simpsons API 🍩"
-              //   // description="A mobile-first React Redux app with filtering options, gathering data from the Simpsons API using Axios"
-              //   />
-              // }
-              loadingOverlay={<LoadingOverlay />}
-            />
-
+            <Link to="/project-details/simpsons-api">
+              <HoverVideoPlayer
+                className="vidContainer"
+                videoSrc="./assets/videos/SimpsonsReactRedux.mp4"
+                pausedOverlay={
+                  <img
+                    src="./assets/images/projects/SimpsonsThumb.png"
+                    alt=""
+                    style={{
+                      // Make the image expand to cover the video's dimensions
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                }
+                // pausedOverlay={
+                //   <PausedOverlay
+                //   // title="Simpsons API 🍩"
+                //   // description="A mobile-first React Redux app with filtering options, gathering data from the Simpsons API using Axios"
+                //   />
+                // }
+                loadingOverlay={<LoadingOverlay />}
+              />
+            </Link>
             <h3>Simpsons API 🍩</h3>
             <p>
               A mobile-first React Redux app with filtering options, gathering
@@ -181,21 +215,30 @@ const Projects = () => {
 
               <img src="./assets/images/tech_icons/figma.svg" />
             </div>
-            <div>
-              <Link to="/project-details/simpsons-api">
-                <p>Project Details</p>
-              </Link>
+
+            <div className="cardCTAs">
+              <button className="projectCTA">
+                <Link to="/project-details/simpsons-api">Project Info</Link>
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick(
+                    "https://simpsonsreactreduxtoolkit.netlify.app"
+                  )
+                }
+              >
+                Live Site
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick("https://github.com/Letwah/simp-redux-tool")
+                }
+              >
+                Git Repo
+              </button>
             </div>
-            <button
-              className="projectCTA"
-              onClick={() =>
-                handleButtonClick(
-                  "https://simpsonsreactreduxtoolkit.netlify.app/"
-                )
-              }
-            >
-              View Live
-            </button>
           </div>
           {/* <div className="projectsCard">
             <HoverVideoPlayer
@@ -233,23 +276,25 @@ const Projects = () => {
           </div> */}
 
           <div className="projectsCard">
-            <HoverVideoPlayer
-              className="vidContainer"
-              videoSrc="./assets/videos/AntiDivorceApp.mp4"
-              pausedOverlay={
-                <img
-                  src="./assets/images/projects/AntiDivorceThumb.png"
-                  alt=""
-                  style={{
-                    // Make the image expand to cover the video's dimensions
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                />
-              }
-              loadingOverlay={<LoadingOverlay />}
-            />
+            <Link to="/project-details/hackathon">
+              <HoverVideoPlayer
+                className="vidContainer"
+                videoSrc="./assets/videos/AntiDivorceApp.mp4"
+                pausedOverlay={
+                  <img
+                    src="./assets/images/projects/AntiDivorceThumb.png"
+                    alt=""
+                    style={{
+                      // Make the image expand to cover the video's dimensions
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                }
+                loadingOverlay={<LoadingOverlay />}
+              />
+            </Link>
             <h3>Hackathon Project 🤓</h3>
             <p>
               A React Redux app for setting up key dates in a calendar and
@@ -262,19 +307,30 @@ const Projects = () => {
               <img src="./assets/images/tech_icons/sass.svg" />
               <img src="./assets/images/tech_icons/figma.svg" />
             </div>
-            <div>
-              <Link to="/project-details/hackathon">
-                <p>Project Details</p>
-              </Link>
+
+            <div className="cardCTAs">
+              <button className="projectCTA">
+                <Link to="/project-details/hackathon">Project Info</Link>
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick(
+                    "https://anti-divorce-hackathon.netlify.app/"
+                  )
+                }
+              >
+                Live Site
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick("https://github.com/Letwah/divorce-app")
+                }
+              >
+                Git Repo
+              </button>
             </div>
-            <button
-              className="projectCTA"
-              onClick={() =>
-                handleButtonClick("https://anti-divorce-hackathon.netlify.app/")
-              }
-            >
-              View Live
-            </button>
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ body > * {
   width: 10px;
   border-radius: 50%;
 
-  background: #ff00008e;
+  background: #ff0000b7;
   transition-timing-function: ease-out;
 
   transition: width 0.8s, height 0.8s, background-color 0.8s;
@@ -23,9 +23,9 @@ body > * {
   height: 50px;
   width: 50px;
   background-color: #ff0000;
-  opacity: 0.4;
+  opacity: 0.6;
   visibility: visible;
-  filter: invert();
+  filter: invert(1);
   pointer-events: none;
 }
 

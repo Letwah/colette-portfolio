@@ -85,7 +85,16 @@ div.projectsTitle {
 }
 
 .projectsCard button {
-  margin: 1rem auto;
+  margin: 1rem 0.3rem;
+}
+
+.cardCTAs {
+  display: flex;
+  flex-basis: 33%;
+}
+
+.projectCTA {
+  font-size: 0.6rem;
 }
 
 .vidContainer {
