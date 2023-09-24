@@ -104,10 +104,9 @@ nav {
   padding: 0;
   background: none;
   border: none;
-  cursor: pointer;
   position: fixed;
-  right: 5%;
-  top: 30%;
+  right: 4vw;
+  top: 2vh;
   z-index: 999;
 }
 
