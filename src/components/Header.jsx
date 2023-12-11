@@ -53,6 +53,7 @@ const Header = () => {
               <a
                 href="https://www.linkedin.com/in/colette-smith-developer"
                 target="_blank"
+                rel="noreferrer"
               >
                 LinkedIn
               </a>
@@ -99,6 +100,7 @@ const Header = () => {
               <a
                 href="https://www.linkedin.com/in/colette-smith-developer"
                 target="_blank"
+                rel="noreferrer"
               >
                 LinkedIn
               </a>
