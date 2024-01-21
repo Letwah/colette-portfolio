@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap, Power3 } from "gsap";
 import "./home/home.css";
 import Projects from "./Projects";
@@ -112,7 +112,7 @@ const Home = () => {
                     className="hero-content-line"
                     ref={(el) => textLinesRef.current.push(el)}
                   >
-                    Hi, I'm Colette,
+                    Hi, Im Colette,
                   </div>
                   <div
                     className="hero-content-line"
