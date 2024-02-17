@@ -1,4 +1,3 @@
-import React from "react";
 import { Slides } from "./slider/Slides";
 
 import "./slider/slider.css";

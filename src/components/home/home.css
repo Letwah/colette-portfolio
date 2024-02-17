@@ -34,13 +34,7 @@
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.hero
-  .heroContainer
-  .hero-inner
-  .hero-content
-  .hero-content-inner
-  h2
-  .hero-content-line {
+.hero .heroContainer .hero-inner .hero-content .hero-content-inner h2 .hero-content-line {
   margin: 0;
 }
 .hero .heroContainer .hero-inner .hero-content .hero-content-inner p {
@@ -58,13 +52,7 @@
   top: 0;
   right: 0;
 }
-.hero
-  .heroContainer
-  .hero-inner
-  .hero-content
-  .hero-image
-  .hero-image-inner
-  img.profile-img {
+.hero .heroContainer .hero-inner .hero-content .hero-image .hero-image-inner img.profile-img {
   position: absolute;
   top: 0;
   right: 0;
@@ -98,20 +86,10 @@ div.child h1 {
     flex-direction: row;
     align-items: flex-end;
   }
-  section.hero
-    div.heroContainer
-    div.hero-inner
-    .hero-content
-    .hero-content-inner
-    h2.about-title {
+  section.hero div.heroContainer div.hero-inner .hero-content .hero-content-inner h2.about-title {
     font-size: 2rem;
   }
-  section.hero
-    div.heroContainer
-    div.hero-inner
-    .hero-image
-    .hero-image-inner
-    img.profile-img {
+  section.hero div.heroContainer div.hero-inner .hero-image .hero-image-inner img.profile-img {
     width: 100%;
   }
   div.marquee-container {
@@ -136,6 +114,10 @@ section.homeContact {
     margin-top: -2rem;
     transform: translateY(2rem);
   }
+  .homeContact > form {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   div.marquee-container {
@@ -148,4 +130,4 @@ section.homeContact {
     margin-top: 4rem;
     transform: translateY(-2rem);
   }
-} /*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

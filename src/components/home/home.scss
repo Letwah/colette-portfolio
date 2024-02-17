@@ -135,12 +135,19 @@ section.homeContact {
 
 .homeContact > form {
   background-color: var(--transparent-bg);
+  // width: 50%;
+  // margin: 0 auto;
 }
 
 @media screen and (min-width: 940px) {
   div.marquee-container {
     margin-top: -2rem;
     transform: translateY(2rem);
+  }
+
+  .homeContact > form {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
