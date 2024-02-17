@@ -1,4 +1,3 @@
-import React from "react";
 import "./contact/contact.css";
 import Shader from "./Shader";
 import ContactForm from "./contact/ContactForm";

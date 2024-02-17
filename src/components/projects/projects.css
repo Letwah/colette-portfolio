@@ -55,13 +55,13 @@ div.projectsTitle {
 .projectsCard {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--transparent-bg);
   border-radius: 4px;
   opacity: 1;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   /* position: relative; */
   overflow: hidden;
   padding: 1rem;
@@ -90,7 +90,7 @@ div.projectsTitle {
 
 .cardCTAs {
   display: flex;
-  flex-basis: 33%;
+  /* flex-basis: 33%; */
 }
 
 .projectCTA {

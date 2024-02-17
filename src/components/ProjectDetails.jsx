@@ -1,4 +1,3 @@
-import React from "react";
 import "./projectDetails/projectDetails.css";
 import { useParams } from "react-router-dom";
 // import { Link } from "react-router-dom";
@@ -8,6 +7,7 @@ import SimpsonsAPI from "./projectDetails/SimpsonsAPI";
 import ToDo from "./projectDetails/Todo";
 import JimmyHutch from "./projectDetails/JimmyHutch";
 import Hackathon from "./projectDetails/Hackathon";
+import SheChatsTech from "./projectDetails/SheChatsTech";
 
 const ProjectDetails = () => {
   let { projectName } = useParams();
@@ -25,6 +25,8 @@ const ProjectDetails = () => {
       return <JimmyHutch />;
     case "hackathon":
       return <Hackathon />;
+    case "she-chats-tech":
+      return <SheChatsTech />;
     default:
       return <div>Project not found</div>;
   }

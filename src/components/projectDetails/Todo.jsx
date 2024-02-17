@@ -1,4 +1,3 @@
-import React from "react";
 import "./projectDetails.css";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
@@ -34,7 +33,11 @@ const ToDo = () => {
         </div>
         <div className="projectLinks">
           <div>
-            <a href="https://colettes-todo-app.netlify.app/" target="_blank">
+            <a
+              href="https://colettes-todo-app.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>View Live </p>
             </a>
           </div>

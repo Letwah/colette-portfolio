@@ -1,4 +1,3 @@
-import React from "react";
 import "./projectDetails.css";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
@@ -66,12 +65,20 @@ const VanillaJsSlide = () => {
             </Link>
           </div>
           <div>
-            <a href="https://vanillaslidesearch.netlify.app/" target="_blank">
+            <a
+              href="https://vanillaslidesearch.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>View Live</p>
             </a>
           </div>
           <div>
-            <a href="https://github.com/Letwah/VanillaProject" target="_blank">
+            <a
+              href="https://github.com/Letwah/VanillaProject"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>Git Repo</p>
             </a>
           </div>

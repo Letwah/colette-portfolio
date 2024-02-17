@@ -17,6 +17,7 @@ import SimpsonsAPI from "./components/projectDetails/SimpsonsAPI";
 import Todo from "./components/projectDetails/Todo";
 import JimmyHutch from "./components/projectDetails/JimmyHutch";
 import Hackathon from "./components/projectDetails/Hackathon";
+import SheChatsTech from "./components/projectDetails/SheChatsTech";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -50,6 +51,7 @@ const App = () => {
           <Route path="/todo" element={<Todo />} />
           <Route path="/jimmy-hutch" element={<JimmyHutch />} />
           <Route path="/hackathon" element={<Hackathon />} />
+          <Route path="/she-chats-tech" element={<SheChatsTech />} />
         </Routes>
         <Footer />
       </div>

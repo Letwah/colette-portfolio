@@ -1,8 +1,8 @@
-import React from "react";
+// import React from "react";
 // import { motion } from "framer-motion";
 import "./projects/projects.css";
 import HoverVideoPlayer from "react-hover-video-player";
-import PausedOverlay from "./projects/PausedOverlay";
+// import PausedOverlay from "./projects/PausedOverlay";
 import LoadingOverlay from "./projects/LoadingOverlay";
 // import ProjectDetails from "./ProjectDetails";
 import { Link } from "react-router-dom";
@@ -21,6 +21,61 @@ const Projects = () => {
         </div>
 
         <div className="projectsContainer top">
+          <div className="projectsCard">
+            <Link to="/project-details/she-chats-tech">
+              <HoverVideoPlayer
+                className="vidContainer"
+                videoSrc="./assets/videos/shechatstech-site.mp4"
+                pausedOverlay={
+                  <img
+                    src="./assets/images/projects/SheChatsTech.png"
+                    alt="shechatstech"
+                    style={{
+                      // Make the image expand to cover the video's dimensions
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                }
+                loadingOverlay={<LoadingOverlay />}
+              />
+            </Link>
+            <h3>She Chat&apos;s Tech 🎨</h3>
+            <p>
+              A React app designed to be a digital home for the She Chat&apos;s
+              Tech Community.
+            </p>
+            <div className="techIcons">
+              <img src="./assets/images/tech_icons/react.svg" />
+              <img src="./assets/images/tech_icons/redux.svg" />
+              <img src="./assets/images/tech_icons/figma.svg" />
+              <img src="./assets/images/tech_icons/greensock.svg" />
+            </div>
+
+            <div className="cardCTAs">
+              <button className="projectCTA">
+                <Link to="/project-details/she-chats-tech">Project Info</Link>
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick("https://www.shechatstech.com/")
+                }
+              >
+                Live Site
+              </button>
+              <button
+                className="projectCTA"
+                onClick={() =>
+                  handleButtonClick("https://github.com/Letwah/She-Chats-Tech")
+                }
+              >
+                Git Repo
+              </button>
+            </div>
+          </div>
+
           <div className="projectsCard">
             <Link to="/project-details/jimmy-hutch">
               <HoverVideoPlayer
@@ -42,7 +97,9 @@ const Projects = () => {
               />
             </Link>
             <h3>Jimmy Hutch Artist 🎨</h3>
-            <p>A fullstack app designed to showcase an artist's portfolio.</p>
+            <p>
+              A fullstack app designed to showcase an artist&apos;s portfolio.
+            </p>
             <div className="techIcons">
               <img src="./assets/images/tech_icons/react.svg" />
               <img src="./assets/images/tech_icons/redux.svg" />

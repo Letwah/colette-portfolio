@@ -1,4 +1,3 @@
-import React from "react";
 import "./projectDetails.css";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
@@ -48,7 +47,7 @@ const SimpsonsAPI = () => {
                 interactivity.
               </p>
               <p>
-                <strong>Comprehensive Styling:</strong> Designed the app's
+                <strong>Comprehensive Styling:</strong> Designed the app&apos;s
                 styling from scratch using HTML, CSS, and SCSS, showcasing a
                 mastery of frontend design.
               </p>
@@ -73,12 +72,17 @@ const SimpsonsAPI = () => {
             <a
               href="https://simpsonsreactreduxtoolkit.netlify.app/"
               target="_blank"
+              rel="noreferrer"
             >
               <p>View Live</p>
             </a>
           </div>
           <div>
-            <a href="https://github.com/Letwah/simp-redux-tool" target="_blank">
+            <a
+              href="https://github.com/Letwah/simp-redux-tool"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>Git Repo</p>
             </a>
           </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./projectDetails.css";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
@@ -66,17 +65,22 @@ const Hackathon = () => {
             <a
               href="https://anti-divorce-hackathon.netlify.app/"
               target="_blank"
+              rel="noreferrer"
             >
               <p>View Live</p>
             </a>
           </div>
           <div>
-            <a href="https://github.com/Letwah/divorce-app" target="_blank">
+            <a
+              href="https://github.com/Letwah/divorce-app"
+              rel="noreferrer"
+              target="_blank"
+            >
               <p>Git Repo</p>
             </a>
           </div>
           <div>
-            <Link to="/project-details/jimmy-hutch">
+            <Link to="/project-details/she-chats-tech">
               <p>
                 <img src="../assets/images/ph_arrow-right-bold.svg"></img>
               </p>

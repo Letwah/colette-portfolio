@@ -1,4 +1,3 @@
-import React from "react";
 import "./projectDetails.css";
 import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
@@ -26,7 +25,7 @@ const JimmyHutch = () => {
             <p>Full Stack React Redux app, using GSAP and SCSS</p>
             <h3>What it Does: </h3>
             <p>
-              This is a React Redux app designed to showcase an artist's
+              This is a React Redux app designed to showcase an artist&apos;s
               portfolio.
             </p>
             <h3>What It Demonstrates:</h3>
@@ -75,19 +74,27 @@ const JimmyHutch = () => {
         </div>
         <div className="projectLinks">
           <div>
-            <Link to="/project-details/hackathon">
+            <Link to="/project-details/she-chats-tech">
               <p>
                 <img src="../assets/images/ph_arrow-left-bold.svg"></img>
               </p>
             </Link>
           </div>
           <div>
-            <a href="https://www.jimmyhutch.uk/" target="_blank">
+            <a
+              href="https://www.jimmyhutch.uk/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>View Live</p>
             </a>
           </div>
           <div>
-            <a href="https://github.com/Letwah/hutch-app" target="_blank">
+            <a
+              href="https://github.com/Letwah/hutch-app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <p>Git Repo</p>
             </a>
           </div>
