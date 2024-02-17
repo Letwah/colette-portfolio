@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "./app.css";
 import { selectPage, setPage } from "./features/appSlice";
+// import { ScrollToTop } from "./components/ScrollToTop";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -18,6 +19,17 @@ import Todo from "./components/projectDetails/Todo";
 import JimmyHutch from "./components/projectDetails/JimmyHutch";
 import Hackathon from "./components/projectDetails/Hackathon";
 import SheChatsTech from "./components/projectDetails/SheChatsTech";
+
+// Modify the ScrollToTop component to use it directly in App
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 const App = () => {
   const dispatch = useDispatch();
@@ -37,6 +49,7 @@ const App = () => {
       <div className="App">
         <Header />
         <CustomCursor />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
