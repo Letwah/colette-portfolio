@@ -1,4 +1,3 @@
-import React from "react";
 import "./footer/footer.css";
 
 const Footer = () => {
@@ -7,13 +6,17 @@ const Footer = () => {
       <footer>
         <div className="footerContainer">
           <div>
-            <p>&copy; Copyright 2023</p>
+            <p>&copy; Copyright 2024</p>
           </div>
 
           <div>
             <p>
-              Built by
-              <a href="https://linkedIn/colette-smith" target="_blank">
+              Designed and Built by
+              <a
+                href="https://linkedIn/colette-smith"
+                target="_blank"
+                rel="noreferrer"
+              >
                 &nbsp;Colette Smith
               </a>
             </p>
