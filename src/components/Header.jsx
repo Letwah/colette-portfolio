@@ -59,7 +59,7 @@ const Header = () => {
               </a>
             </div>
             <div>
-              <a href="./assets/Colette_Smith_CV_2023.pdf" target="_blank">
+              <a href="./assets/ColetteSmith-CV-DEV-24.pdf" target="_blank">
                 CV
               </a>
             </div>
